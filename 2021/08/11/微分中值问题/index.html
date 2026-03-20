@@ -233,42 +233,105 @@
             
             <div class="markdown-body">
               <h2 id="类型一">类型一：</h2>
-<p>题目中有这样的条件：若函数<span class="math inline">\(f(x)\)</span>在<span class="math inline">\([a,b]\)</span>上连续，在<span class="math inline">\((a,b)\)</span>上可导，且<span class="math inline">\(f(a)=0\)</span>或<span class="math inline">\(f(b)=0\)</span>或<span class="math inline">\(f(a)=f(b)=0\)</span>，那么就先考虑用拉格朗日中值定理。</p>
+<p>题目中有这样的条件：若函数<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上连续，在<span
+class="math inline">\((a,b)\)</span>上可导，且<span
+class="math inline">\(f(a)=0\)</span>或<span
+class="math inline">\(f(b)=0\)</span>或<span
+class="math inline">\(f(a)=f(b)=0\)</span>，那么就先考虑用拉格朗日中值定理。</p>
 <ul>
-<li>设函数<span class="math inline">\(f(x)\)</span>在<span class="math inline">\([a,b]\)</span>上有连续的导数，且<span class="math inline">\(f(a)=f(b)=0\)</span>，<span class="math inline">\(M=\max_{x\in[a,b]}\left|f&#39;(x)\right|\)</span>，求证：<span class="math inline">\(\frac{4}{(b-a)^2}\int_a^bf(x)dx\leqslant M\)</span>.</li>
-<li><span class="math inline">\(f (x)\)</span>在<span class="math inline">\([ a,b ]\)</span>上连续在<span class="math inline">\(( a,b )\)</span>内可导且$ f (a) =f (b) = 0<span class="math inline">\(，求证：存在\)</span>(a,b)<span class="math inline">\(使得\)</span>f()+f '() =0<span class="math inline">\(. * 考虑函数\)</span>F(x)=e^{}f(x)$，罗尔定理</li>
+<li>设函数<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上有连续的导数，且<span
+class="math inline">\(f(a)=f(b)=0\)</span>，<span
+class="math inline">\(M=\max_{x\in[a,b]}\left|f&#39;(x)\right|\)</span>，求证：<span
+class="math inline">\(\frac{4}{(b-a)^2}\int_a^bf(x)dx\leqslant
+M\)</span>.</li>
+<li><span class="math inline">\(f (x)\)</span>在<span
+class="math inline">\([ a,b ]\)</span>上连续在<span
+class="math inline">\(( a,b )\)</span>内可导且$ f (a) =f (b) = 0<span
+class="math inline">\(，求证：存在\)</span>(a,b)<span
+class="math inline">\(使得\)</span>f()+f '() =0<span
+class="math inline">\(.
+* 考虑函数\)</span>F(x)=e^{}f(x)$，罗尔定理</li>
 </ul>
 <h2 id="类型二">类型二：</h2>
-<p>欲证结论：至少存在一点<span class="math inline">\(\eta,\xi\in[a,b]\)</span>且<span class="math inline">\(\eta\ne\xi\)</span>满足某种关系式的命题。 思路：使用两次拉格朗日中值定理或者柯西中值定理，或者一次拉格朗日中值定理、一次柯西中值定理，然后再将它们做某种运算。</p>
+<p>欲证结论：至少存在一点<span
+class="math inline">\(\eta,\xi\in[a,b]\)</span>且<span
+class="math inline">\(\eta\ne\xi\)</span>满足某种关系式的命题。
+思路：使用两次拉格朗日中值定理或者柯西中值定理，或者一次拉格朗日中值定理、一次柯西中值定理，然后再将它们做某种运算。</p>
 <ul>
-<li>设<span class="math inline">\(f(x)\)</span>在<span class="math inline">\([a,b]\)</span>上连续，在<span class="math inline">\((a,b)\)</span>内可导，<span class="math inline">\(f(a)=f(b)=1\)</span>，试证存在<span class="math inline">\(\xi,\eta\in(0,1)\)</span>，使得<span class="math inline">\(e^{\eta-\xi}[f(\eta)+f&#39;(\eta)]=1\)</span>.
+<li>设<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上连续，在<span
+class="math inline">\((a,b)\)</span>内可导，<span
+class="math inline">\(f(a)=f(b)=1\)</span>，试证存在<span
+class="math inline">\(\xi,\eta\in(0,1)\)</span>，使得<span
+class="math inline">\(e^{\eta-\xi}[f(\eta)+f&#39;(\eta)]=1\)</span>.
 <ul>
-<li>把<span class="math inline">\(\xi\)</span>移到等号右边​，两次拉格朗日中值定理</li>
+<li>把<span
+class="math inline">\(\xi\)</span>移到等号右边​，两次拉格朗日中值定理</li>
 </ul></li>
-<li>设<span class="math inline">\(f(x)\in\C[a,b]\cap \text{D}(a,b)\)</span>，且<span class="math inline">\(f&#39;(x)\ne0\)</span>，证明：<span class="math inline">\(\exist\xi,\eta\in(a,b)\)</span>使得<span class="math inline">\(\frac{f&#39;(\xi)}{f&#39;(\eta)}=\frac{e^b-e^a}{b-a}e^{-\eta}\)</span>.</li>
+<li>设<span class="math inline">\(f(x)\in\C[a,b]\cap
+\text{D}(a,b)\)</span>，且<span
+class="math inline">\(f&#39;(x)\ne0\)</span>，证明：<span
+class="math inline">\(\exist\xi,\eta\in(a,b)\)</span>使得<span
+class="math inline">\(\frac{f&#39;(\xi)}{f&#39;(\eta)}=\frac{e^b-e^a}{b-a}e^{-\eta}\)</span>.</li>
 </ul>
 <h2 id="类型三">类型三</h2>
 <p>对于函数具有二阶或二阶以上连续导数，且最高阶导数的大小或上下界已知的命题可以考虑用泰勒公式</p>
 <ul>
-<li>如果<span class="math inline">\(f(x)\)</span>在<span class="math inline">\([a,b]\)</span>上有二阶导数，<span class="math inline">\(f&#39;(a)=f&#39;(b)=0\)</span>，证明：<span class="math inline">\(\exist\xi\in(a,b)\)</span>使得<span class="math inline">\(\left|f&#39;&#39;(\xi) \right|\geqslant \frac{4}{(b-a)^2}\left| f(b)-f(a)\right|\)</span>.
+<li>如果<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上有二阶导数，<span
+class="math inline">\(f&#39;(a)=f&#39;(b)=0\)</span>，证明：<span
+class="math inline">\(\exist\xi\in(a,b)\)</span>使得<span
+class="math inline">\(\left|f&#39;&#39;(\xi) \right|\geqslant
+\frac{4}{(b-a)^2}\left| f(b)-f(a)\right|\)</span>.
 <ul>
-<li>将<span class="math inline">\(f(\frac{a+b}{2})\)</span>分别在<span class="math inline">\(a,b\)</span>处展开</li>
+<li>将<span class="math inline">\(f(\frac{a+b}{2})\)</span>分别在<span
+class="math inline">\(a,b\)</span>处展开</li>
 </ul></li>
-<li>设<span class="math inline">\(f(x)\)</span>二次可微，<span class="math inline">\(f(0)=f(1)=0\)</span>，<span class="math inline">\(\max_{0\leqslant x\leqslant1}f(x)=2\)</span>，证明：<span class="math inline">\(\min_{0\leqslant x\leqslant1}f&#39;&#39;(x)\leqslant-16\)</span>.
+<li>设<span class="math inline">\(f(x)\)</span>二次可微，<span
+class="math inline">\(f(0)=f(1)=0\)</span>，<span
+class="math inline">\(\max_{0\leqslant
+x\leqslant1}f(x)=2\)</span>，证明：<span
+class="math inline">\(\min_{0\leqslant
+x\leqslant1}f&#39;&#39;(x)\leqslant-16\)</span>.
 <ul>
 <li>有最大值必有极值点，极值点导数为0</li>
 </ul></li>
-<li>设<span class="math inline">\(f(x)\)</span>在<span class="math inline">\([0,1]\)</span>上二次可微，<span class="math inline">\(f(0)=f(1)=0\)</span>，且当<span class="math inline">\(x\in(0,1)\)</span>时，<span class="math inline">\(\left|f&#39;&#39;(x)\right |\leqslant M\)</span>证明：<span class="math inline">\(\left|f&#39;(x)\right |\leqslant \frac{M}{2}\)</span>.
+<li>设<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([0,1]\)</span>上二次可微，<span
+class="math inline">\(f(0)=f(1)=0\)</span>，且当<span
+class="math inline">\(x\in(0,1)\)</span>时，<span
+class="math inline">\(\left|f&#39;&#39;(x)\right |\leqslant
+M\)</span>证明：<span class="math inline">\(\left|f&#39;(x)\right
+|\leqslant  \frac{M}{2}\)</span>.
 <ul>
 <li>有最大值必有极值点，极值点导数为0</li>
 </ul></li>
-<li>设<span class="math inline">\(f(x)\)</span>在<span class="math inline">\([a,b]\)</span>上有二阶导数，<span class="math inline">\(f(a)=f(b)=0\)</span>，<span class="math inline">\(\left| f&#39;&#39;(x)\right|\leqslant8\)</span>，证明：<span class="math inline">\(\left| f(\frac{a+b}{2}\right|\leqslant(b-a)^2\)</span>.</li>
-<li>设<span class="math inline">\(f(x)\)</span>在<span class="math inline">\([a,b]\)</span>上有二阶导数，<span class="math inline">\(f(\frac{a+b}{2})=0\)</span>，<span class="math inline">\(\left| f&#39;&#39;(x)\right|\leqslant M\)</span>，<span class="math inline">\(b-a\leqslant1\)</span>证明：<span class="math inline">\(\left| f(a)+f(b)\right|\leqslant \frac{M}{4}\)</span>.</li>
+<li>设<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上有二阶导数，<span
+class="math inline">\(f(a)=f(b)=0\)</span>，<span
+class="math inline">\(\left|
+f&#39;&#39;(x)\right|\leqslant8\)</span>，证明：<span
+class="math inline">\(\left|
+f(\frac{a+b}{2}\right|\leqslant(b-a)^2\)</span>.</li>
+<li>设<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上有二阶导数，<span
+class="math inline">\(f(\frac{a+b}{2})=0\)</span>，<span
+class="math inline">\(\left| f&#39;&#39;(x)\right|\leqslant
+M\)</span>，<span
+class="math inline">\(b-a\leqslant1\)</span>证明：<span
+class="math inline">\(\left| f(a)+f(b)\right|\leqslant
+\frac{M}{4}\)</span>.</li>
 </ul>
 <h2 id="类型四">类型四</h2>
 <p>先用积分中值定理</p>
 <ul>
-<li>设<span class="math inline">\(f(x)\)</span>在<span class="math inline">\([0,1]\)</span>上是非负单调递减得连续函数，且<span class="math inline">\(0&lt;a&lt;b&lt;1\)</span>，证明：<span class="math inline">\(\int_0^af(x)dx\geqslant\frac{a}{b-a}\int_a^bf(x)dx\)</span>.
+<li>设<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([0,1]\)</span>上是非负单调递减得连续函数，且<span
+class="math inline">\(0&lt;a&lt;b&lt;1\)</span>，证明：<span
+class="math inline">\(\int_0^af(x)dx\geqslant\frac{a}{b-a}\int_a^bf(x)dx\)</span>.
 <ul>
 <li>两个积分各用一次积分中值定理，然后利用单调性</li>
 </ul></li>

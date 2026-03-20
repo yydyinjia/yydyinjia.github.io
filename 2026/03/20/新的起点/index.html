@@ -15,12 +15,28 @@
   
   <meta name="theme-color" content="#2f4154">
   <meta name="description" content="">
-  <meta name="author" content="dong">
+  <meta name="author" content="handong">
   <meta name="keywords" content="">
   
-  <title>归档 - 寒冬</title>
+  <title>新的起点 - 寒冬</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/atom-one-dark-reasonable.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -52,7 +68,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -149,11 +165,48 @@
          style="background: url('https://cdn.jsdelivr.net/gh/handong991201/picture/img/1602750730545.jpeg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.1)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="新的起点">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2026-03-20 13:22" pubdate>
+        2026年3月20日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      982 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      11
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -166,46 +219,125 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 22 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/08/17/%E9%87%8D%E8%A6%81%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E3%80%81%E4%B8%8D%E7%AD%89%E5%BC%8F%E3%80%81%E7%AD%89%E5%BC%8F/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">重要数学公式、不等式、等式</span>
-      <time style="float: right;">08-17</time>
-    </a>
-  
-    
-    <a href="/2021/08/11/%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E9%97%AE%E9%A2%98/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">微分中值问题</span>
-      <time style="float: right;">08-11</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">新的起点</h1>
+            
+            <div class="markdown-body">
+              <p># Hexo博客常用命令归纳（速查版）
+为了方便你日常管理博客，我把Hexo最核心、最常用的命令按「场景分类」整理好了，附说明和实用组合用法，新手也能直接套用👇
+## 一、基础环境&amp;初始化（首次/迁移必用） | 命令 | 作用 | 适用场景 |
+|------|------|----------| | <code>npm install hexo-cli -g</code> |
+全局安装Hexo命令行工具 | 新电脑首次配置、hexo命令报错时 | |
+<code>npm install</code> | 安装项目依赖 |
+迁移博客文件后、新增插件/主题后 | | <code>hexo init [文件夹名]</code> |
+初始化新的Hexo项目 | 从零创建新博客时（你已有项目，无需执行） | ##
+二、本地开发&amp;预览（日常写文章必用） ### 1. 核心命令 | 命令 | 简写 |
+作用 | |------|------|------| | <code>hexo clean</code> | - |
+清除缓存文件和生成的静态文件（解决样式/内容不更新问题） | |
+<code>hexo generate</code> | <code>hexo g</code> |
+根据源文件生成静态博客页面（生成到<code>public</code>目录） | |
+<code>hexo server</code> | <code>hexo s</code> |
+启动本地预览服务器（默认地址：<code>http://localhost:4000</code>） | ###
+2. 实用组合命令（一键操作，推荐收藏）
+<code>bash # 清理缓存 + 生成 + 启动本地服务（日常写文章最常用） hexo clean &amp;&amp; hexo g &amp;&amp; hexo s # 启动服务时自定义端口（默认4000被占用时） hexo s -p 5000  # 访问地址变为 http://localhost:5000 # 启动服务并实时监听文件变化（修改后自动刷新） hexo s -w</code>
+## 三、文章/页面管理（创作内容必用） ### 1. 创建内容 | 命令 | 作用 |
+说明 | |------|------|------| | <code>hexo new "文章标题"</code> |
+创建新博客文章 | 生成到<code>source/_posts/文章标题.md</code> | |
+<code>hexo new page "页面名称"</code> | 创建独立页面（如关于页、归档页）
+| 生成到<code>source/页面名称/index.md</code> | |
+<code>hexo new draft "草稿标题"</code> | 创建草稿文章 |
+生成到<code>source/_drafts/</code>，默认不生成到静态文件 | ### 2.
+草稿发布
+<code>bash # 将草稿转为正式文章（发布时用） hexo publish "草稿标题"</code>
+## 四、部署上线（发布到GitHub/Gitee等） ### 1. 基础部署命令
+<code>bash # 清理缓存 + 生成 + 部署（发布上线标准流程） hexo clean &amp;&amp; hexo g &amp;&amp; hexo d # 仅执行部署（已生成静态文件时） hexo d  # 等价于 hexo deploy</code>
+### 2. 部署相关配置 - 部署前需确保： 1.
+安装部署插件：<code>npm install hexo-deployer-git --save</code> 2.
+<code>_config.yml</code>中配置好仓库信息（示例）：
+<code>yaml     deploy:       type: git       repo: git@github.com:你的用户名/你的仓库名.git  # SSH地址（推荐）       branch: gh-pages  # GitHub Pages默认分支</code>
+## 五、进阶/应急命令 | 命令 | 作用 | 适用场景 |
+|------|------|----------| | <code>hexo version</code> |
+查看Hexo及依赖版本 | 排查版本兼容问题 | | <code>npx hexo xxx</code> |
+调用本地Hexo执行命令 | 不想全局安装Hexo时（替代<code>hexo xxx</code>） |
+| <code>hexo g -d</code> | 生成文件并直接部署 |
+简化部署步骤（等价于<code>hexo g &amp;&amp; hexo d</code>） | |
+<code>hexo s -s</code> | 静态模式启动服务 |
+模拟线上环境预览（加载<code>public</code>目录文件） | ##
+六、命令使用小贴士 1.
+<strong>执行位置</strong>：所有命令都要在「博客根目录」下执行（包含<code>package.json</code>、<code>_config.yml</code>的目录）；
+2.
+<strong>缓存问题</strong>：修改主题配置、文章内容后，先执行<code>hexo clean</code>再预览，避免旧缓存干扰；
+3.
+<strong>快捷键</strong>：本地服务启动后，按<code>Ctrl+C</code>可停止服务；
+4.
+<strong>中文标题</strong>：创建文章时标题含中文，建议用引号包裹（如<code>hexo new "我的第一篇Hexo博客"</code>）。
+--- ### 总结 1. <strong>日常开发</strong>：核心组合
+<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code>，搞定本地预览；
+2. <strong>发布上线</strong>：核心组合
+<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>，一键部署到线上；
+3. <strong>内容管理</strong>：创建文章用
+<code>hexo new "标题"</code>，创建草稿用
+<code>hexo new draft "标题"</code>，发布草稿用
+<code>hexo publish "标题"</code>。
+可以把这份命令清单保存到博客目录下的<code>README.md</code>，下次用的时候直接查看，不用再反复查资料～</p>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/04/12/Lagrange%E6%81%92%E7%AD%89%E5%BC%8F/">
+                        <span class="hidden-mobile">Lagrange恒等式</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -342,9 +474,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 

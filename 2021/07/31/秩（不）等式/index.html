@@ -235,12 +235,19 @@
               <h1 id="秩不等式">秩（不）等式</h1>
 <h2 id="不等式">不等式</h2>
 <ol type="1">
-<li><p>如果向量组<span class="math inline">\(\alpha_{1},\cdots,\alpha_{s}\)</span>可以由向量组<span class="math inline">\(\beta_{1},\cdots,\beta_{t}\)</span>，那么 <span class="math display">\[
-\mathrm{rank}\{\alpha_{1},\cdots,\alpha_{s}\}\leqslant \mathrm{rank} \{\beta_{1},\cdots,\beta_{t} \}.
+<li><p>如果向量组<span
+class="math inline">\(\alpha_{1},\cdots,\alpha_{s}\)</span>可以由向量组<span
+class="math inline">\(\beta_{1},\cdots,\beta_{t}\)</span>，那么 <span
+class="math display">\[
+\mathrm{rank}\{\alpha_{1},\cdots,\alpha_{s}\}\leqslant \mathrm{rank}
+\{\beta_{1},\cdots,\beta_{t} \}.
 \]</span></p></li>
-<li><p><span class="math inline">\(\mathrm{rank}\{\alpha_{1},\cdots,\alpha_{s},\beta_{1},\cdots,\beta_{t}\}\leqslant \mathrm{rank}\{\alpha_{1},\cdots,\alpha_{s}\}+\mathrm{rank}\{\beta_{1},\cdots,\beta_{t}\}\)</span></p>
+<li><p><span
+class="math inline">\(\mathrm{rank}\{\alpha_{1},\cdots,\alpha_{s},\beta_{1},\cdots,\beta_{t}\}\leqslant
+\mathrm{rank}\{\alpha_{1},\cdots,\alpha_{s}\}+\mathrm{rank}\{\beta_{1},\cdots,\beta_{t}\}\)</span></p>
 <blockquote>
-<p>矩阵表示形式，证明可以取两个向量组的极大无关组。 <span class="math display">\[
+<p>矩阵表示形式，证明可以取两个向量组的极大无关组。 <span
+class="math display">\[
 \mathrm{rank}((A,B))\leqslant\mathrm{rank}(A)+\mathrm{rank}(B).
 \]</span></p>
 <p><span class="math display">\[
@@ -263,43 +270,62 @@ A &amp; C \\
 <blockquote>
 <p>可用子式不等于0证明</p>
 </blockquote></li>
-<li><p><span class="math inline">\(\mathrm{rank}((A,B))\geqslant \mathrm{max}\{\mathrm{rank}(A),\mathrm{rank}(B)\}\)</span>.</p>
+<li><p><span class="math inline">\(\mathrm{rank}((A,B))\geqslant
+\mathrm{max}\{\mathrm{rank}(A),\mathrm{rank}(B)\}\)</span>.</p>
 <blockquote>
 <p>证明左边同时大于右边括号内的两个即可，取极大无关组。</p>
 </blockquote></li>
-<li><p><span class="math inline">\(\mathrm{rank}(AB)\leqslant \mathrm{min}\{\mathrm{rank}(A),\mathrm{rank}(B)\}\)</span>.</p>
+<li><p><span class="math inline">\(\mathrm{rank}(AB)\leqslant
+\mathrm{min}\{\mathrm{rank}(A),\mathrm{rank}(B)\}\)</span>.</p>
 <blockquote>
-<p>证明左边小于右边括号内的两个即可，将<span class="math inline">\(A\)</span>或<span class="math inline">\(B\)</span>写成列向量的形式。</p>
+<p>证明左边小于右边括号内的两个即可，将<span
+class="math inline">\(A\)</span>或<span
+class="math inline">\(B\)</span>写成列向量的形式。</p>
 </blockquote></li>
-<li><p><span class="math inline">\(\mathrm{rank}(A+B)\leqslant \mathrm{rank}(A)+\mathrm{rank}(B)\)</span>.</p>
+<li><p><span class="math inline">\(\mathrm{rank}(A+B)\leqslant
+\mathrm{rank}(A)+\mathrm{rank}(B)\)</span>.</p>
 <blockquote>
 <p>将矩阵写成列向量的形式，取极大无关组。</p>
 </blockquote></li>
-<li><p>设<span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span>分别是<span class="math inline">\(s\times n\)</span>、<span class="math inline">\(n\times m\)</span>矩阵，若<span class="math inline">\(AB=0\)</span>，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>、<span
+class="math inline">\(B\)</span>分别是<span
+class="math inline">\(s\times n\)</span>、<span
+class="math inline">\(n\times m\)</span>矩阵，若<span
+class="math inline">\(AB=0\)</span>，则 <span class="math display">\[
 \mathrm{rank}(A)+\mathrm{rank}(B)\leqslant n.
 \]</span></p>
 <blockquote>
 <p>利用线性方程组的知识可证。</p>
 </blockquote></li>
-<li><p>设<span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span>分别是<span class="math inline">\(s\times n\)</span>、<span class="math inline">\(n\times m\)</span>矩阵，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>、<span
+class="math inline">\(B\)</span>分别是<span
+class="math inline">\(s\times n\)</span>、<span
+class="math inline">\(n\times m\)</span>矩阵，则 <span
+class="math display">\[
 \mathrm{rank}(AB)\geqslant\mathrm{rank}(A)+\mathrm{rank}(B)-n.
 \]</span></p>
 <blockquote>
 <p>Sylvester秩不等式，利用分块矩阵的初等行（列）变换。</p>
 </blockquote></li>
-<li><p>设<span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span>分别是<span class="math inline">\(s\times n\)</span>、<span class="math inline">\(n\times m\)</span>、<span class="math inline">\(m\times t\)</span>矩阵，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>、<span
+class="math inline">\(B\)</span>分别是<span
+class="math inline">\(s\times n\)</span>、<span
+class="math inline">\(n\times m\)</span>、<span
+class="math inline">\(m\times t\)</span>矩阵，则 <span
+class="math display">\[
 \mathrm{rank}(ABC)\geqslant\mathrm{rank}(AB)+\mathrm{rank}(BC)-\mathrm{rank}(B).
 \]</span></p>
 <blockquote>
-<p>Frobenius秩不等式。利用分块矩阵的初等行（列）变换： <span class="math display">\[
+<p>Frobenius秩不等式。利用分块矩阵的初等行（列）变换： <span
+class="math display">\[
 \begin{pmatrix}
- B &amp; 0\\
- 0 &amp; ABC\\
+B &amp; 0\\
+0 &amp; ABC\\
 \end{pmatrix}
 \to
 \begin{pmatrix}
- BC &amp; B\\
- 0 &amp; AB\\
+BC &amp; B\\
+0 &amp; AB\\
 \end{pmatrix}
 \]</span></p>
 </blockquote></li>
@@ -316,31 +342,59 @@ A &amp; 0 \\
 <blockquote>
 <p>利用初等行（列）变换化为单位矩阵。</p>
 </blockquote></li>
-<li><p>设<span class="math inline">\(A\)</span>为<span class="math inline">\(n\times m\)</span>矩阵，若<span class="math inline">\(k\ne0\)</span>，则<span class="math inline">\(\mathrm{rank}(kA)=\mathrm{rank}(A)\)</span>.</p>
+<li><p>设<span class="math inline">\(A\)</span>为<span
+class="math inline">\(n\times m\)</span>矩阵，若<span
+class="math inline">\(k\ne0\)</span>，则<span
+class="math inline">\(\mathrm{rank}(kA)=\mathrm{rank}(A)\)</span>.</p>
 <blockquote>
-<p>证一：利用不等式5。 证：<span class="math inline">\(\mathrm{rank}(kA)=\mathrm{rank}((kI)A)\leqslant\mathrm{rank}(A)\)</span>.由于<span class="math inline">\(k\ne0\)</span>，因此<span class="math inline">\(\mathrm{rank}(A)=\mathrm{rank}((k^{-1}I)(kA))\leqslant\mathrm{rank}(kA)\)</span>。从而<span class="math inline">\(\mathrm{rank}(kA)=\mathrm{rank}(A)\)</span>.</p>
+<p>证一：利用不等式5。 证：<span
+class="math inline">\(\mathrm{rank}(kA)=\mathrm{rank}((kI)A)\leqslant\mathrm{rank}(A)\)</span>.由于<span
+class="math inline">\(k\ne0\)</span>，因此<span
+class="math inline">\(\mathrm{rank}(A)=\mathrm{rank}((k^{-1}I)(kA))\leqslant\mathrm{rank}(kA)\)</span>。从而<span
+class="math inline">\(\mathrm{rank}(kA)=\mathrm{rank}(A)\)</span>.</p>
 <p>证二：利用初等变换不改变矩阵的秩</p>
-<p><span class="math inline">\(kA=P_1(k)P_2(k)\cdots P_n(k)A\)</span>.</p>
+<p><span class="math inline">\(kA=P_1(k)P_2(k)\cdots
+P_n(k)A\)</span>.</p>
 </blockquote></li>
-<li><p><span class="math inline">\(\mathrm{rank}(A^{&#39;}A)=\mathrm{rank}(AA^{&#39;})=\mathrm{rank}(A)=\mathrm{rank}(AA^{&#39;}A)\)</span>.</p>
+<li><p><span
+class="math inline">\(\mathrm{rank}(A^{&#39;}A)=\mathrm{rank}(AA^{&#39;})=\mathrm{rank}(A)=\mathrm{rank}(AA^{&#39;}A)\)</span>.</p>
 <blockquote>
-<p><span class="math inline">\(A\)</span>为实数域上的矩阵。证明利用线性方程组同解。</p>
+<p><span
+class="math inline">\(A\)</span>为实数域上的矩阵。证明利用线性方程组同解。</p>
 </blockquote></li>
-<li><p><span class="math inline">\(\mathrm{rank}(\bar{A}^{&#39;}A)=\mathrm{rank}(A\bar{A}^{&#39;})=\mathrm{rank}(A)\)</span>.</p>
+<li><p><span
+class="math inline">\(\mathrm{rank}(\bar{A}^{&#39;}A)=\mathrm{rank}(A\bar{A}^{&#39;})=\mathrm{rank}(A)\)</span>.</p>
 <blockquote>
-<p><span class="math inline">\(A\)</span>为复数域上的矩阵,同时<span class="math inline">\(\mathrm{rank}(A^{&#39;}A)\ne\mathrm{rank}(A)\)</span>.证明利用线性方程组（复数域）同解。</p>
+<p><span class="math inline">\(A\)</span>为复数域上的矩阵,同时<span
+class="math inline">\(\mathrm{rank}(A^{&#39;}A)\ne\mathrm{rank}(A)\)</span>.证明利用线性方程组（复数域）同解。</p>
 </blockquote></li>
-<li><p>数域<span class="math inline">\(K\)</span>上<span class="math inline">\(n\)</span>级矩阵<span class="math inline">\(A\)</span>是幂等矩阵当且仅当 <span class="math display">\[
+<li><p>数域<span class="math inline">\(K\)</span>上<span
+class="math inline">\(n\)</span>级矩阵<span
+class="math inline">\(A\)</span>是幂等矩阵当且仅当 <span
+class="math display">\[
 \mathrm{rank}(A)+\mathrm{rank}(I-A)=n.      
 \]</span></p>
 <blockquote>
-<p>如果数域<span class="math inline">\(K\)</span>上<span class="math inline">\(n\)</span>级矩阵<span class="math inline">\(A\)</span>满足<span class="math inline">\(A^{2}=A\)</span>，那么称<span class="math inline">\(A\)</span>是幂等矩阵。 证明可以利用不等式6、7或者分块矩阵的初等行（列变换）</p>
+<p>如果数域<span class="math inline">\(K\)</span>上<span
+class="math inline">\(n\)</span>级矩阵<span
+class="math inline">\(A\)</span>满足<span
+class="math inline">\(A^{2}=A\)</span>，那么称<span
+class="math inline">\(A\)</span>是幂等矩阵。
+证明可以利用不等式6、7或者分块矩阵的初等行（列变换）</p>
 </blockquote></li>
-<li><p>数域<span class="math inline">\(K\)</span>上<span class="math inline">\(n\)</span>级矩阵<span class="math inline">\(A\)</span>是对合矩阵当且仅当 <span class="math display">\[
+<li><p>数域<span class="math inline">\(K\)</span>上<span
+class="math inline">\(n\)</span>级矩阵<span
+class="math inline">\(A\)</span>是对合矩阵当且仅当 <span
+class="math display">\[
 \mathrm{rank}(I+A)+\mathrm{rank}(I-A)=n.
 \]</span></p>
 <blockquote>
-<p>如果数域<span class="math inline">\(K\)</span>上<span class="math inline">\(n\)</span>级矩阵<span class="math inline">\(A\)</span>满足<span class="math inline">\(A^{2}=I\)</span>，那么称<span class="math inline">\(A\)</span>是对合矩阵。 证明可以利用不等式6、7或者分块矩阵的初等行（列变换）。</p>
+<p>如果数域<span class="math inline">\(K\)</span>上<span
+class="math inline">\(n\)</span>级矩阵<span
+class="math inline">\(A\)</span>满足<span
+class="math inline">\(A^{2}=I\)</span>，那么称<span
+class="math inline">\(A\)</span>是对合矩阵。
+证明可以利用不等式6、7或者分块矩阵的初等行（列变换）。</p>
 </blockquote></li>
 </ol>
 

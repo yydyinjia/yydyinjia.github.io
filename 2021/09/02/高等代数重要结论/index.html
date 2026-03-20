@@ -234,7 +234,9 @@
             <div class="markdown-body">
               <h2 id="行列式">行列式</h2>
 <ol type="1">
-<li><p><strong>若<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>是方阵，则</strong> <span class="math display">\[
+<li><p><strong>若<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>是方阵，则</strong> <span
+class="math display">\[
 \begin{vmatrix}
 A &amp; O\\
 C &amp; B
@@ -246,7 +248,11 @@ A
 B
 \end{vmatrix}
 \]</span></p></li>
-<li><p><strong>设<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>分别是<span class="math inline">\(s\times n\)</span>，<span class="math inline">\(n\times s\)</span>矩阵，则</strong> <span class="math display">\[
+<li><p><strong>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>分别是<span
+class="math inline">\(s\times n\)</span>，<span
+class="math inline">\(n\times s\)</span>矩阵，则</strong> <span
+class="math display">\[
 \begin{vmatrix}
 I_n &amp; B\\
 A &amp; I_s
@@ -258,7 +264,13 @@ I_s-AB
 I_n-BA
 \end{vmatrix}
 \]</span></p></li>
-<li><p>设<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>，<span class="math inline">\(C\)</span>，<span class="math inline">\(D\)</span>都是数域<span class="math inline">\(K\)</span>上的<span class="math inline">\(n\)</span>阶矩阵，且<span class="math inline">\(AC=CA\)</span>，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>，<span
+class="math inline">\(C\)</span>，<span
+class="math inline">\(D\)</span>都是数域<span
+class="math inline">\(K\)</span>上的<span
+class="math inline">\(n\)</span>阶矩阵，且<span
+class="math inline">\(AC=CA\)</span>，则 <span class="math display">\[
 \begin{vmatrix}
 A &amp; B\\
 C &amp; D
@@ -270,7 +282,10 @@ AD-CB
 <ul>
 <li>摄动法</li>
 </ul></li>
-<li><p>设<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>是<span class="math inline">\(n\)</span>阶矩阵且<span class="math inline">\(AB=BA\)</span>，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>是<span
+class="math inline">\(n\)</span>阶矩阵且<span
+class="math inline">\(AB=BA\)</span>，则 <span class="math display">\[
 \begin{vmatrix}
 A &amp; -B\\
 B &amp; A
@@ -278,22 +293,30 @@ B &amp; A
 =|A^2+B^2|
 \]</span></p>
 <ul>
-<li>由上一个可得，或者分块初等变换：<span class="math inline">\(i\)</span>.</li>
+<li>由上一个可得，或者分块初等变换：<span
+class="math inline">\(i\)</span>.</li>
 </ul></li>
-<li><p>设<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>是<span class="math inline">\(n\)</span>阶矩阵，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>是<span
+class="math inline">\(n\)</span>阶矩阵，则 <span class="math display">\[
 \begin{vmatrix}
 A &amp; B\\
 B &amp; A
 \end{vmatrix}
 =|A+B||A-B|
 \]</span></p></li>
-<li><p>设<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>是<span class="math inline">\(n\)</span>阶实矩阵，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>是<span
+class="math inline">\(n\)</span>阶实矩阵，则 <span
+class="math display">\[
 \begin{vmatrix}
 A &amp; -B\\
 B &amp; A
 \end{vmatrix}\geqslant0
 \]</span></p></li>
-<li><p><strong>（行列式降阶公式）<span class="math inline">\(A,B\)</span>为可逆矩阵，则有</strong> <span class="math display">\[
+<li><p><strong>（行列式降阶公式）<span
+class="math inline">\(A,B\)</span>为可逆矩阵，则有</strong> <span
+class="math display">\[
 |D||A-BD^{-1}C|=|A||D-CA^{-1}B|.
 \]</span></p>
 <ul>
@@ -319,42 +342,83 @@ w &amp; z &amp; y &amp; -x
 <ol type="1">
 <li>上（下）三角阵的加减，数乘，乘法（幂），多项式，伴随和求逆都是上（下）三角阵，并且所得上（下）三角阵的主对角元是对应元素的加减，数乘，乘法（幂），多项式，伴随和求逆。</li>
 <li><strong>任意一个复矩阵一定相似与一个上三角阵。</strong></li>
-<li>任意一个复矩阵<span class="math inline">\(A\)</span>，存在<span class="math inline">\(n\)</span>阶复对称矩阵<span class="math inline">\(B,C\)</span>，使得<span class="math inline">\(A=BC\)</span>，并且可以指定<span class="math inline">\(B,C\)</span>，中任何一个为可逆矩阵。</li>
-<li>任意一个复矩阵<span class="math inline">\(A\)</span>都相似于一个复对称阵。</li>
+<li>任意一个复矩阵<span class="math inline">\(A\)</span>，存在<span
+class="math inline">\(n\)</span>阶复对称矩阵<span
+class="math inline">\(B,C\)</span>，使得<span
+class="math inline">\(A=BC\)</span>，并且可以指定<span
+class="math inline">\(B,C\)</span>，中任何一个为可逆矩阵。</li>
+<li>任意一个复矩阵<span
+class="math inline">\(A\)</span>都相似于一个复对称阵。</li>
 <li>分块对角矩阵对角线上的块打乱之后是合同的，正交相似的。</li>
 </ol>
 <h3 id="矩阵方程">矩阵方程</h3>
 <ol type="1">
-<li>矩阵方程<span class="math inline">\(AX=B\)</span>有解等价于<span class="math inline">\(B\)</span>的列向量可由<span class="math inline">\(A\)</span>的列向量线性表示，无解等价于<span class="math inline">\(B\)</span>的某个列向量不能由<span class="math inline">\(A\)</span>的列向量线性表示。
+<li>矩阵方程<span class="math inline">\(AX=B\)</span>有解等价于<span
+class="math inline">\(B\)</span>的列向量可由<span
+class="math inline">\(A\)</span>的列向量线性表示，无解等价于<span
+class="math inline">\(B\)</span>的某个列向量不能由<span
+class="math inline">\(A\)</span>的列向量线性表示。
 <ul>
 <li>过度矩阵。</li>
 </ul></li>
 </ol>
 <h3 id="相抵标准型">相抵标准型</h3>
 <ol type="1">
-<li>设<span class="math inline">\(A\)</span>是一个<span class="math inline">\(m\times n\)</span>矩阵，则
+<li>设<span class="math inline">\(A\)</span>是一个<span
+class="math inline">\(m\times n\)</span>矩阵，则
 <ul>
-<li>若<span class="math inline">\(A\)</span>列满秩，则存在秩为<span class="math inline">\(n\)</span>的<span class="math inline">\(n\times m\)</span>矩阵<span class="math inline">\(B\)</span>，使得<span class="math inline">\(BA=I_n\)</span>.（列满秩存在左逆）</li>
-<li>若<span class="math inline">\(A\)</span>行满秩，则存在秩为<span class="math inline">\(m\)</span>的<span class="math inline">\(n\times m\)</span>矩阵<span class="math inline">\(C\)</span>，使得<span class="math inline">\(AC=I_m\)</span>.（行满秩存在右逆）</li>
+<li>若<span class="math inline">\(A\)</span>列满秩，则存在秩为<span
+class="math inline">\(n\)</span>的<span class="math inline">\(n\times
+m\)</span>矩阵<span class="math inline">\(B\)</span>，使得<span
+class="math inline">\(BA=I_n\)</span>.（列满秩存在左逆）</li>
+<li>若<span class="math inline">\(A\)</span>行满秩，则存在秩为<span
+class="math inline">\(m\)</span>的<span class="math inline">\(n\times
+m\)</span>矩阵<span class="math inline">\(C\)</span>，使得<span
+class="math inline">\(AC=I_m\)</span>.（行满秩存在右逆）</li>
 </ul></li>
-<li>设<span class="math inline">\(A\)</span>是一个<span class="math inline">\(m\times n\)</span>矩阵，则
+<li>设<span class="math inline">\(A\)</span>是一个<span
+class="math inline">\(m\times n\)</span>矩阵，则
 <ul>
-<li>若<span class="math inline">\(A\)</span>列满秩，且<span class="math inline">\(AD=AE\)</span>，则<span class="math inline">\(D=E\)</span>.</li>
-<li>若<span class="math inline">\(A\)</span>行满秩，且<span class="math inline">\(DA=EA\)</span>，则<span class="math inline">\(D=E\)</span>.</li>
+<li>若<span class="math inline">\(A\)</span>列满秩，且<span
+class="math inline">\(AD=AE\)</span>，则<span
+class="math inline">\(D=E\)</span>.</li>
+<li>若<span class="math inline">\(A\)</span>行满秩，且<span
+class="math inline">\(DA=EA\)</span>，则<span
+class="math inline">\(D=E\)</span>.</li>
 </ul></li>
-<li>设<span class="math inline">\(A\)</span>是一个<span class="math inline">\(m\times n\)</span>矩阵，秩为<span class="math inline">\(r\)</span>，则<span class="math inline">\(A\)</span>存在满秩分解：<span class="math inline">\(A=BC\)</span>，其中<span class="math inline">\(B\)</span>为<span class="math inline">\(m\times r\)</span>列满秩矩阵，<span class="math inline">\(C\)</span>为<span class="math inline">\(r \times n\)</span>行满秩矩阵.
+<li>设<span class="math inline">\(A\)</span>是一个<span
+class="math inline">\(m\times n\)</span>矩阵，秩为<span
+class="math inline">\(r\)</span>，则<span
+class="math inline">\(A\)</span>存在满秩分解：<span
+class="math inline">\(A=BC\)</span>，其中<span
+class="math inline">\(B\)</span>为<span class="math inline">\(m\times
+r\)</span>列满秩矩阵，<span class="math inline">\(C\)</span>为<span
+class="math inline">\(r \times n\)</span>行满秩矩阵.
 <ul>
-<li>若<span class="math inline">\(A\)</span>有两个满秩分解<span class="math inline">\(A=B_1C_1=B_2C_2\)</span>，则存在<span class="math inline">\(r\)</span>阶可逆矩阵<span class="math inline">\(P\)</span>使得<span class="math inline">\(B_2=B_1P,C_2=P^{-1}C_1\)</span>.（利用1证明）</li>
+<li>若<span class="math inline">\(A\)</span>有两个满秩分解<span
+class="math inline">\(A=B_1C_1=B_2C_2\)</span>，则存在<span
+class="math inline">\(r\)</span>阶可逆矩阵<span
+class="math inline">\(P\)</span>使得<span
+class="math inline">\(B_2=B_1P,C_2=P^{-1}C_1\)</span>.（利用1证明）</li>
 </ul></li>
 </ol>
 <h3 id="实对称矩阵">实对称矩阵</h3>
 <ol type="1">
-<li><span class="math inline">\(n\)</span>阶对称矩阵<span class="math inline">\(A\)</span>是零矩阵的充要条件是对任意的<span class="math inline">\(n\)</span>维列向量<span class="math inline">\(\alpha\)</span>，有<span class="math inline">\(\alpha&#39;A\alpha=0\)</span>.</li>
+<li><span class="math inline">\(n\)</span>阶对称矩阵<span
+class="math inline">\(A\)</span>是零矩阵的充要条件是对任意的<span
+class="math inline">\(n\)</span>维列向量<span
+class="math inline">\(\alpha\)</span>，有<span
+class="math inline">\(\alpha&#39;A\alpha=0\)</span>.</li>
 <li>实对称矩阵属于不同特征值的特征向量是正交的。</li>
 <li>实对称矩阵的特征值都为实数。</li>
 <li>实对称矩阵一定正交相似对角矩阵。
 <ul>
-<li>已知<span class="math inline">\(B,C\)</span>为<span class="math inline">\(n\)</span>阶实对称阵，<span class="math inline">\(|B|=0\)</span>，则存在<span class="math inline">\(n\)</span>阶实对称阵<span class="math inline">\(A\)</span>使得<span class="math inline">\(AB+BA&#39;=C\)</span>.</li>
+<li>已知<span class="math inline">\(B,C\)</span>为<span
+class="math inline">\(n\)</span>阶实对称阵，<span
+class="math inline">\(|B|=0\)</span>，则存在<span
+class="math inline">\(n\)</span>阶实对称阵<span
+class="math inline">\(A\)</span>使得<span
+class="math inline">\(AB+BA&#39;=C\)</span>.</li>
 </ul></li>
 <li>实对称矩阵的特征值的代数重数等于几何重数。
 <ul>
@@ -363,16 +427,33 @@ w &amp; z &amp; y &amp; -x
 </ol>
 <h3 id="反对称矩阵">反对称矩阵</h3>
 <ol type="1">
-<li><span class="math inline">\(n\)</span>阶矩阵<span class="math inline">\(A\)</span>是反对称矩阵的充要条件是对任意的<span class="math inline">\(n\)</span>维列向量<span class="math inline">\(\alpha\)</span>，有<span class="math inline">\(\alpha&#39;A\alpha=0\)</span>.</li>
-<li><span class="math inline">\(n\)</span>阶矩阵<span class="math inline">\(A\)</span>是反对称矩阵，则<span class="math inline">\(I_n-A\)</span>不可逆.</li>
-<li><span class="math inline">\(n\)</span>阶矩阵<span class="math inline">\(A\)</span>是反对称矩阵，则其行列式的值总是非负实数.</li>
+<li><span class="math inline">\(n\)</span>阶矩阵<span
+class="math inline">\(A\)</span>是反对称矩阵的充要条件是对任意的<span
+class="math inline">\(n\)</span>维列向量<span
+class="math inline">\(\alpha\)</span>，有<span
+class="math inline">\(\alpha&#39;A\alpha=0\)</span>.</li>
+<li><span class="math inline">\(n\)</span>阶矩阵<span
+class="math inline">\(A\)</span>是反对称矩阵，则<span
+class="math inline">\(I_n-A\)</span>不可逆.</li>
+<li><span class="math inline">\(n\)</span>阶矩阵<span
+class="math inline">\(A\)</span>是反对称矩阵，则其行列式的值总是非负实数.</li>
 </ol>
 <h3 id="伴随矩阵">伴随矩阵</h3>
 <ol type="1">
-<li><p>设<span class="math inline">\(A\)</span>是<span class="math inline">\(n\)</span>阶矩阵（<span class="math inline">\(n\geqslant2\)</span>），则：<span class="math inline">\(|A^*|=|A|^{n-1}\)</span>.</p></li>
-<li><p>设<span class="math inline">\(A\)</span>是<span class="math inline">\(n\)</span>阶矩阵（<span class="math inline">\(n\geqslant 3\)</span>），则：<span class="math inline">\((A^*)^*=|A|^{n-2}A\)</span>.</p></li>
-<li><p>设<span class="math inline">\(A,B\)</span>为<span class="math inline">\(n\)</span>阶矩阵，求证：<span class="math inline">\((AB)^*=B^*A^*\)</span>.</p></li>
-<li><p>设<span class="math inline">\(A\)</span>是<span class="math inline">\(n\)</span>阶矩阵（<span class="math inline">\(n\geqslant2\)</span>），则有 $$ (A^*)=</p>
+<li><p>设<span class="math inline">\(A\)</span>是<span
+class="math inline">\(n\)</span>阶矩阵（<span
+class="math inline">\(n\geqslant2\)</span>），则：<span
+class="math inline">\(|A^*|=|A|^{n-1}\)</span>.</p></li>
+<li><p>设<span class="math inline">\(A\)</span>是<span
+class="math inline">\(n\)</span>阶矩阵（<span
+class="math inline">\(n\geqslant 3\)</span>），则：<span
+class="math inline">\((A^*)^*=|A|^{n-2}A\)</span>.</p></li>
+<li><p>设<span class="math inline">\(A,B\)</span>为<span
+class="math inline">\(n\)</span>阶矩阵，求证：<span
+class="math inline">\((AB)^*=B^*A^*\)</span>.</p></li>
+<li><p>设<span class="math inline">\(A\)</span>是<span
+class="math inline">\(n\)</span>阶矩阵（<span
+class="math inline">\(n\geqslant2\)</span>），则有 $$ (A^*)=</p>
 <span class="math display">\[\begin{cases}
 n &amp; \text{rand}(A)=n,\\
 1 &amp; \text{rand}(A)=n-1,\\
@@ -386,40 +467,70 @@ n &amp; \text{rand}(A)=n,\\
 <p><strong>证明矩阵可逆的方法：</strong></p>
 <blockquote>
 <ul>
-<li>对应的齐次线性方程组只有零解，从而系数矩阵的行列式为<span class="math inline">\(0\)</span>.</li>
+<li>对应的齐次线性方程组只有零解，从而系数矩阵的行列式为<span
+class="math inline">\(0\)</span>.</li>
 <li>行列式不等于0 。</li>
 <li>满秩。</li>
 <li>凑因子：即找到对应的逆</li>
 <li>特征值非零
 <ul>
-<li>设<span class="math inline">\(n\)</span>阶方阵<span class="math inline">\(A\)</span>满足<span class="math inline">\(A^2-A-3I_n=O\)</span>，则<span class="math inline">\(A-2I_n\)</span>可逆。</li>
+<li>设<span class="math inline">\(n\)</span>阶方阵<span
+class="math inline">\(A\)</span>满足<span
+class="math inline">\(A^2-A-3I_n=O\)</span>，则<span
+class="math inline">\(A-2I_n\)</span>可逆。</li>
 </ul></li>
 <li>互素多项式的应用</li>
 </ul>
 </blockquote>
 <ol type="1">
-<li><p>矩阵<span class="math inline">\(A\)</span>可逆<span class="math inline">\(\iff |A|\ne0 \iff A\)</span>满秩。</p></li>
-<li><p>设<span class="math inline">\(A\)</span>为<span class="math inline">\(m\times n\)</span>矩阵，<span class="math inline">\(B\)</span>为<span class="math inline">\(n\times m\)</span>矩阵，使得<span class="math inline">\(I_m+AB\)</span>可逆，则<span class="math inline">\(I_n+BA\)</span> 也可逆。</p></li>
+<li><p>矩阵<span class="math inline">\(A\)</span>可逆<span
+class="math inline">\(\iff |A|\ne0 \iff A\)</span>满秩。</p></li>
+<li><p>设<span class="math inline">\(A\)</span>为<span
+class="math inline">\(m\times n\)</span>矩阵，<span
+class="math inline">\(B\)</span>为<span class="math inline">\(n\times
+m\)</span>矩阵，使得<span
+class="math inline">\(I_m+AB\)</span>可逆，则<span
+class="math inline">\(I_n+BA\)</span> 也可逆。</p></li>
 <li><p>可逆矩阵满足消去律：</p>
 <ul>
-<li>若<span class="math inline">\(A\)</span>可逆，且<span class="math inline">\(BA=0\)</span>，则<span class="math inline">\(B=0\)</span>.</li>
+<li>若<span class="math inline">\(A\)</span>可逆，且<span
+class="math inline">\(BA=0\)</span>，则<span
+class="math inline">\(B=0\)</span>.</li>
 </ul></li>
-<li><p>设<span class="math inline">\(A,B,A-B\)</span>都是<span class="math inline">\(n\)</span>阶可逆矩阵,证明 <span class="math display">\[
+<li><p>设<span class="math inline">\(A,B,A-B\)</span>都是<span
+class="math inline">\(n\)</span>阶可逆矩阵,证明 <span
+class="math display">\[
 B^{-1}-A^{-1}=(B+B(A-B)^{-1}B)^{-1}.
 \]</span></p></li>
-<li><p>设<span class="math inline">\(A\)</span>可逆，则有<span class="math inline">\(A^{-1}+(A^{-1})&#39;=(A^{-1})&#39;(A+A&#39;)A^{-1}\)</span>.</p></li>
+<li><p>设<span class="math inline">\(A\)</span>可逆，则有<span
+class="math inline">\(A^{-1}+(A^{-1})&#39;=(A^{-1})&#39;(A+A&#39;)A^{-1}\)</span>.</p></li>
 </ol>
 <h3 id="幂等矩阵">幂等矩阵</h3>
 <ol type="1">
-<li>若幂等矩阵<span class="math inline">\(A\)</span>的满秩分解为<span class="math inline">\(A=ST\)</span>，则<span class="math inline">\(TS=I_r\)</span>，其中<span class="math inline">\(r\)</span>为幂等矩阵的秩、迹.</li>
+<li>若幂等矩阵<span class="math inline">\(A\)</span>的满秩分解为<span
+class="math inline">\(A=ST\)</span>，则<span
+class="math inline">\(TS=I_r\)</span>，其中<span
+class="math inline">\(r\)</span>为幂等矩阵的秩、迹.</li>
 </ol>
 <h3 id="特征值与特征向量">特征值与特征向量</h3>
 <ol type="1">
-<li><p><strong>（特征值降阶公式）设<span class="math inline">\(A\)</span>是<span class="math inline">\(m\times n\)</span>矩阵，<span class="math inline">\(B\)</span>是<span class="math inline">\(n\times m\)</span>矩阵，且<span class="math inline">\(m\geqslant n\)</span>，则有</strong> <span class="math display">\[
+<li><p><strong>（特征值降阶公式）设<span
+class="math inline">\(A\)</span>是<span class="math inline">\(m\times
+n\)</span>矩阵，<span class="math inline">\(B\)</span>是<span
+class="math inline">\(n\times m\)</span>矩阵，且<span
+class="math inline">\(m\geqslant n\)</span>，则有</strong> <span
+class="math display">\[
 |\lambda I_m-AB|=\lambda^{m-n}|\lambda I_n-BA|.
 \]</span></p></li>
-<li><p>若矩阵<span class="math inline">\(A\)</span>适合多项式<span class="math inline">\(f(x)\)</span>，则矩阵<span class="math inline">\(A\)</span>的特征值也适合多项式<span class="math inline">\(f(x)\)</span>.</p></li>
-<li><p>若矩阵<span class="math inline">\(A\)</span>的全体特征值为<span class="math inline">\(\lambda_1,\lambda_2,\cdots,\lambda_n\)</span>，<span class="math inline">\(f(x)\)</span>为一多项式，则<span class="math inline">\(f(A)\)</span>的全体特征值为<span class="math inline">\(f(\lambda_1),f(\lambda_2),\cdots,f(\lambda_n)\)</span>.</p></li>
+<li><p>若矩阵<span class="math inline">\(A\)</span>适合多项式<span
+class="math inline">\(f(x)\)</span>，则矩阵<span
+class="math inline">\(A\)</span>的特征值也适合多项式<span
+class="math inline">\(f(x)\)</span>.</p></li>
+<li><p>若矩阵<span class="math inline">\(A\)</span>的全体特征值为<span
+class="math inline">\(\lambda_1,\lambda_2,\cdots,\lambda_n\)</span>，<span
+class="math inline">\(f(x)\)</span>为一多项式，则<span
+class="math inline">\(f(A)\)</span>的全体特征值为<span
+class="math inline">\(f(\lambda_1),f(\lambda_2),\cdots,f(\lambda_n)\)</span>.</p></li>
 </ol>
 <h3 id="正定矩阵">正定矩阵</h3>
 <ol type="1">
@@ -427,24 +538,35 @@ B^{-1}-A^{-1}=(B+B(A-B)^{-1}B)^{-1}.
 <ul>
 <li><p>（对称初等变换）合同变换不改变正定性，与单位阵合同</p>
 <blockquote>
-<p><span class="math inline">\(A\)</span>正定，证明<span class="math inline">\(\begin{pmatrix}A &amp; -I_n\\-I_n &amp; A^{-1} \end{pmatrix}\)</span>半正定.</p>
+<p><span class="math inline">\(A\)</span>正定，证明<span
+class="math inline">\(\begin{pmatrix}A &amp; -I_n\\-I_n &amp;
+A^{-1}   \end{pmatrix}\)</span>半正定.</p>
 </blockquote></li>
-<li><p>利用特征值来判断，特征值全大于<span class="math inline">\(0\)</span>.</p>
+<li><p>利用特征值来判断，特征值全大于<span
+class="math inline">\(0\)</span>.</p>
 <blockquote>
-<p>若<span class="math inline">\(A\)</span>为可逆实矩阵，求<span class="math display">\[\begin{pmatrix}O &amp; A\\A&#39; &amp; O   \end{pmatrix}\]</span>的正负惯性指数。（也可以用上面的对称初等变换）</p>
+<p>若<span class="math inline">\(A\)</span>为可逆实矩阵，求<span
+class="math display">\[\begin{pmatrix}O &amp; A\\A&#39; &amp;
+O   \end{pmatrix}\]</span>的正负惯性指数。（也可以用上面的对称初等变换）</p>
 </blockquote></li>
 <li></li>
 </ul></li>
-<li><p><strong><span class="math inline">\(A\)</span>是可逆实对称阵，则<span class="math inline">\(A&#39;A\)</span>为正定矩阵.</strong>s</p></li>
+<li><p><strong><span
+class="math inline">\(A\)</span>是可逆实对称阵，则<span
+class="math inline">\(A&#39;A\)</span>为正定矩阵.</strong>s</p></li>
 </ol>
 <h2 id="二次型">二次型</h2>
 <ol type="1">
-<li><p>（正负惯性指数的降阶公式）设分块实对称矩阵<span class="math inline">\(M=\begin{pmatrix}A &amp; C\\ C&#39;&amp;B \end{pmatrix}\)</span>，其中<span class="math inline">\(A,B\)</span>可逆，则 <span class="math display">\[
+<li><p>（正负惯性指数的降阶公式）设分块实对称矩阵<span
+class="math inline">\(M=\begin{pmatrix}A &amp; C\\ C&#39;&amp;B
+\end{pmatrix}\)</span>，其中<span
+class="math inline">\(A,B\)</span>可逆，则 <span class="math display">\[
 p(A)+p(B-C&#39;A^{-1}C)=p(B)+p(A-CB^{-1}C&#39;),\\
 q(A)+q(B-C&#39;A^{-1}C)=q(B)+q(A-CB^{-1}C&#39;).
 \]</span></p>
 <ul>
-<li><p>其中<span class="math inline">\(p(A),q(A)\)</span>分别表示<span class="math inline">\(A\)</span>的正负惯性指数.</p></li>
+<li><p>其中<span class="math inline">\(p(A),q(A)\)</span>分别表示<span
+class="math inline">\(A\)</span>的正负惯性指数.</p></li>
 <li><p>求下列矩阵的正负惯性指数: <span class="math display">\[
 \begin{pmatrix}
 a_1^2 &amp; a_1a_2+1 &amp; \cdots &amp; a_1a_n+1\\
@@ -458,17 +580,38 @@ a_na_1+1 &amp; a_na_2+1 &amp; \cdots &amp; a_na_n+1
 <h2 id="摄动法解题">摄动法解题</h2>
 <p>注：习题摘自高等代数习题课（复旦大学谢启鸿）</p>
 <ol type="1">
-<li><p>设<span class="math inline">\(A\)</span>是一个<span class="math inline">\(n\)</span>阶矩阵，求证：存在一个正数<span class="math inline">\(a\)</span>，使得对任意的<span class="math inline">\(0&lt;t&lt;a\)</span>，矩阵<span class="math inline">\(tI_n+A\)</span>都是非异阵.</p></li>
-<li><p>设<span class="math inline">\(A,B\)</span>为<span class="math inline">\(n\)</span>阶矩阵，求证：<span class="math inline">\((AB)^*=B^*A^*\)</span>.</p></li>
-<li><p>设<span class="math inline">\(A\)</span>是一个<span class="math inline">\(n\)</span>阶矩阵，求证：<span class="math inline">\(|A^*|=|A|^{n-1}\)</span>.</p></li>
-<li><p>设<span class="math inline">\(A\)</span>是一个<span class="math inline">\(n(n&gt;2)\)</span>阶矩阵，求证：<span class="math inline">\((A^*)^*=|A|^{n-2}A\)</span>.</p></li>
-<li><p>设<span class="math inline">\(A\)</span>是一个<span class="math inline">\(m\)</span>阶矩阵，<span class="math inline">\(B\)</span>为<span class="math inline">\(n\)</span>阶矩阵，求分块对角矩阵<span class="math inline">\(C\)</span>的伴随矩阵： <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>是一个<span
+class="math inline">\(n\)</span>阶矩阵，求证：存在一个正数<span
+class="math inline">\(a\)</span>，使得对任意的<span
+class="math inline">\(0&lt;t&lt;a\)</span>，矩阵<span
+class="math inline">\(tI_n+A\)</span>都是非异阵.</p></li>
+<li><p>设<span class="math inline">\(A,B\)</span>为<span
+class="math inline">\(n\)</span>阶矩阵，求证：<span
+class="math inline">\((AB)^*=B^*A^*\)</span>.</p></li>
+<li><p>设<span class="math inline">\(A\)</span>是一个<span
+class="math inline">\(n\)</span>阶矩阵，求证：<span
+class="math inline">\(|A^*|=|A|^{n-1}\)</span>.</p></li>
+<li><p>设<span class="math inline">\(A\)</span>是一个<span
+class="math inline">\(n(n&gt;2)\)</span>阶矩阵，求证：<span
+class="math inline">\((A^*)^*=|A|^{n-2}A\)</span>.</p></li>
+<li><p>设<span class="math inline">\(A\)</span>是一个<span
+class="math inline">\(m\)</span>阶矩阵，<span
+class="math inline">\(B\)</span>为<span
+class="math inline">\(n\)</span>阶矩阵，求分块对角矩阵<span
+class="math inline">\(C\)</span>的伴随矩阵： <span
+class="math display">\[
 C=\begin{pmatrix}
 A &amp; O\\
 O &amp; B
 \end{pmatrix}
 \]</span></p></li>
-<li><p>设<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>，<span class="math inline">\(C\)</span>，<span class="math inline">\(D\)</span>都是数域<span class="math inline">\(K\)</span>上的<span class="math inline">\(n\)</span>阶矩阵，且<span class="math inline">\(AC=CA\)</span>，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>，<span
+class="math inline">\(C\)</span>，<span
+class="math inline">\(D\)</span>都是数域<span
+class="math inline">\(K\)</span>上的<span
+class="math inline">\(n\)</span>阶矩阵，且<span
+class="math inline">\(AC=CA\)</span>，则 <span class="math display">\[
 \begin{vmatrix}
 A &amp; B\\
 C &amp; D
@@ -477,7 +620,11 @@ C &amp; D
 AD-CB
 \end{vmatrix}
 \]</span></p></li>
-<li><p>设<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>都是数域<span class="math inline">\(K\)</span>上的<span class="math inline">\(n\)</span>阶矩阵，且<span class="math inline">\(AB=BA\)</span>，则 <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>都是数域<span
+class="math inline">\(K\)</span>上的<span
+class="math inline">\(n\)</span>阶矩阵，且<span
+class="math inline">\(AB=BA\)</span>，则 <span class="math display">\[
 \begin{vmatrix}
 A &amp; -B\\
 B &amp; A
@@ -487,8 +634,17 @@ A^2+B^2
 \end{vmatrix}
 \]</span></p></li>
 <li><p>上（下）三角阵的伴随仍然是上（下）三角阵，且主对角元是对应元素的伴随.</p></li>
-<li><p>设<span class="math inline">\(A\)</span>，<span class="math inline">\(B\)</span>都是数域<span class="math inline">\(K\)</span>上的<span class="math inline">\(n\)</span>阶矩阵，且<span class="math inline">\(AB=BA\)</span>，则<span class="math inline">\(A^*B^*=B^*A^*\)</span>.</p></li>
-<li><p>设<span class="math inline">\(|A|=|a_{ij}|\)</span>是一个<span class="math inline">\(n\)</span>阶行列式，<span class="math inline">\(A_{ij}\)</span>是它的第<span class="math inline">\((i,j)\)</span>元素的代数余子式，求证： <span class="math display">\[
+<li><p>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>都是数域<span
+class="math inline">\(K\)</span>上的<span
+class="math inline">\(n\)</span>阶矩阵，且<span
+class="math inline">\(AB=BA\)</span>，则<span
+class="math inline">\(A^*B^*=B^*A^*\)</span>.</p></li>
+<li><p>设<span class="math inline">\(|A|=|a_{ij}|\)</span>是一个<span
+class="math inline">\(n\)</span>阶行列式，<span
+class="math inline">\(A_{ij}\)</span>是它的第<span
+class="math inline">\((i,j)\)</span>元素的代数余子式，求证： <span
+class="math display">\[
 \begin{vmatrix}
 a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; x_1 \\
 a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; x_2 \\
@@ -502,7 +658,11 @@ y_1    &amp; y_2    &amp; \cdots &amp; y_n    &amp; 1
 <h2 id="求代数余子式之和">求代数余子式之和</h2>
 <h3 id="求所有代数余子式">求所有代数余子式</h3>
 <ol type="1">
-<li><p>设<span class="math inline">\(|A|=|a_{ij}|\)</span>是一个<span class="math inline">\(n\)</span>阶行列式，<span class="math inline">\(A_{ij}\)</span>是它的第<span class="math inline">\((i,j)\)</span>元素的代数余子式，则有 <span class="math display">\[
+<li><p>设<span class="math inline">\(|A|=|a_{ij}|\)</span>是一个<span
+class="math inline">\(n\)</span>阶行列式，<span
+class="math inline">\(A_{ij}\)</span>是它的第<span
+class="math inline">\((i,j)\)</span>元素的代数余子式，则有 <span
+class="math display">\[
 \begin{vmatrix}
 a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; 1 \\
 a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; 1 \\
@@ -512,7 +672,8 @@ a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn} &amp; 1 \\
 \end{vmatrix}
 =-\sum_{i=1}^{n}\sum_{j=1}^n A_{ij}x_iy_j.
 \]</span></p></li>
-<li><p>利用下面结论（分别将<span class="math inline">\(x\)</span>取值为1）：</p>
+<li><p>利用下面结论（分别将<span
+class="math inline">\(x\)</span>取值为1）：</p>
 <ul>
 <li><p><span class="math display">\[
 \begin{vmatrix}
@@ -525,15 +686,18 @@ a_{n1}+x &amp; a_{n2}+x &amp; \cdots &amp; a_{nn}+x \\
 a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
 a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
 \vdots &amp; \vdots &amp;       &amp; \vdots \\
-a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn} 
+a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}
 \end{vmatrix}+x\sum_{i=1}^{n}\sum_{j=1}^n A_{ij}.
 \]</span></p></li>
 <li><p><span class="math display">\[
 \begin{vmatrix}
-a_{11}-a_{12} &amp; a_{12}-a_{13} &amp; \cdots &amp; a_{1,n-1}-a_{1n} &amp; 1 \\
-a_{21}-a_{22} &amp; a_{22}-a_{23} &amp; \cdots &amp; a_{2,n-1}-a_{2n} &amp; 1 \\
+a_{11}-a_{12} &amp; a_{12}-a_{13} &amp; \cdots &amp; a_{1,n-1}-a_{1n}
+&amp; 1 \\
+a_{21}-a_{22} &amp; a_{22}-a_{23} &amp; \cdots &amp; a_{2,n-1}-a_{2n}
+&amp; 1 \\
 \vdots &amp; \vdots &amp;       &amp; \vdots &amp; \vdots \\
-a_{n1}-a_{n2} &amp; a_{n2}-a_{n3} &amp; \cdots &amp; a_{n,n-1}-a_{nn} &amp; 1 
+a_{n1}-a_{n2} &amp; a_{n2}-a_{n3} &amp; \cdots &amp; a_{n,n-1}-a_{nn}
+&amp; 1
 \end{vmatrix}
 =\sum_{i=1}^{n}\sum_{j=1}^n A_{ij}x_iy_j.
 \]</span></p></li>
@@ -541,25 +705,34 @@ a_{n1}-a_{n2} &amp; a_{n2}-a_{n3} &amp; \cdots &amp; a_{n,n-1}-a_{nn} &amp; 1
 </ol>
 <h3 id="求某一行代数余子式之和">求某一行代数余子式之和</h3>
 <ol type="1">
-<li><p>利用行列式按一行展开的性质：<span class="math inline">\(a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}=|A|\)</span>.</p>
+<li><p>利用行列式按一行展开的性质：<span
+class="math inline">\(a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}=|A|\)</span>.</p>
 <ul>
-<li><p>计算<span class="math inline">\(A_{21}+A_{22}+A_{23}+A_{24}\)</span>，其中<span class="math inline">\(A_{ij}\)</span>是下面这个行列式<span class="math inline">\(a_{ij}\)</span>的代数余子式。 <span class="math display">\[
+<li><p>计算<span
+class="math inline">\(A_{21}+A_{22}+A_{23}+A_{24}\)</span>，其中<span
+class="math inline">\(A_{ij}\)</span>是下面这个行列式<span
+class="math inline">\(a_{ij}\)</span>的代数余子式。 <span
+class="math display">\[
 D=
 \begin{vmatrix}
 2 &amp; -5 &amp; 3 &amp; 4 \\
 9 &amp; 8 &amp; 7 &amp; 6 \\
 1 &amp; 5 &amp; 7 &amp; 3 \\
-4 &amp; 7 &amp; 0 &amp; 3 
+4 &amp; 7 &amp; 0 &amp; 3
 \end{vmatrix}
 \]</span></p></li>
-<li><p>只需将<span class="math inline">\(D\)</span>的第二行元素换为<span class="math inline">\(1\)</span>，再计算行列式即可。</p></li>
+<li><p>只需将<span class="math inline">\(D\)</span>的第二行元素换为<span
+class="math inline">\(1\)</span>，再计算行列式即可。</p></li>
 </ul></li>
 </ol>
 <h2 id="用到的其他知识">用到的其他知识</h2>
 <ol type="1">
-<li>设在区间<span class="math inline">\([a,b]\)</span>上给定<span class="math inline">\(n+1\)</span>个点 <span class="math display">\[
+<li>设在区间<span class="math inline">\([a,b]\)</span>上给定<span
+class="math inline">\(n+1\)</span>个点 <span class="math display">\[
 a\leqslant x_0&lt;x_1&lt;\cdots&lt;x_n\leqslant b
-\]</span> 上的函数值<span class="math inline">\(y_i=f(x_i)(i=0,1,\cdots,n)\)</span>，则存在一个唯一的不超过<span class="math inline">\(n\)</span>次的多项式 <span class="math display">\[
+\]</span> 上的函数值<span
+class="math inline">\(y_i=f(x_i)(i=0,1,\cdots,n)\)</span>，则存在一个唯一的不超过<span
+class="math inline">\(n\)</span>次的多项式 <span class="math display">\[
 P(x)=a_0+a_1x+\cdots+a_nx^n
 \]</span> 使得 <span class="math display">\[
 P(x_i)=y_i,\quad i=0,1,\cdots,n.
@@ -567,7 +740,9 @@ P(x_i)=y_i,\quad i=0,1,\cdots,n.
 </ol>
 <h2 id="一定要想到的点">一定要想到的点</h2>
 <ol type="1">
-<li><span class="math inline">\(A\alpha=0\)</span>，一定要想到左乘<span class="math inline">\(\alpha&#39;\)</span>，或者<span class="math inline">\(\bar{\alpha&#39;}\)</span>.</li>
+<li><span class="math inline">\(A\alpha=0\)</span>，一定要想到左乘<span
+class="math inline">\(\alpha&#39;\)</span>，或者<span
+class="math inline">\(\bar{\alpha&#39;}\)</span>.</li>
 </ol>
 
             </div>

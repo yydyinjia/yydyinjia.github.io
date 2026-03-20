@@ -234,11 +234,19 @@
             <div class="markdown-body">
               <h2 id="微分方程解法">微分方程解法</h2>
 <ol type="1">
-<li><p>一阶线性微分方程<span class="math inline">\(y&#39;+p(x)y=q(x)\)</span>的解法：</p>
+<li><p>一阶线性微分方程<span
+class="math inline">\(y&#39;+p(x)y=q(x)\)</span>的解法：</p>
 <ul>
 <li><p>常数变易法</p>
 <blockquote>
-<p>先求对应齐次方程的通解<span class="math inline">\(y=Ce^{-\int p(x)\mathrm{d}x}\)</span>，变动常数，设非齐次方程的解为<span class="math inline">\(y=C(x)e^{-\int p(x)\mathrm{d}x}\)</span>，代入非齐次方程解得<span class="math inline">\(C(x)=\int q(x)e^{\int p(x)\mathrm{d}x}\mathrm{d}x+C\)</span>，所以<span class="math inline">\(y=e^{-\int p(x)\mathrm{d}x}[\int q(x)e^{\int p(x)\mathrm{d}x}\mathrm{d}x+C]\)</span></p>
+<p>先求对应齐次方程的通解<span class="math inline">\(y=Ce^{-\int
+p(x)\mathrm{d}x}\)</span>，变动常数，设非齐次方程的解为<span
+class="math inline">\(y=C(x)e^{-\int
+p(x)\mathrm{d}x}\)</span>，代入非齐次方程解得<span
+class="math inline">\(C(x)=\int q(x)e^{\int
+p(x)\mathrm{d}x}\mathrm{d}x+C\)</span>，所以<span
+class="math inline">\(y=e^{-\int p(x)\mathrm{d}x}[\int q(x)e^{\int
+p(x)\mathrm{d}x}\mathrm{d}x+C]\)</span></p>
 </blockquote></li>
 </ul></li>
 <li><p>二阶常系数齐次线性方程求解： <span class="math display">\[
@@ -247,10 +255,18 @@ y&#39;&#39;+py&#39;+qy=0
 <ul>
 <li><p>特征根法</p>
 <blockquote>
-<p>求出特征方程<span class="math inline">\(r^2+pr+q=0\)</span>的两个根<span class="math inline">\(r_1,r_2\)</span></p>
-<p>若<span class="math inline">\(r_1\ne r_2\)</span>为实根，则通解为<span class="math inline">\(y=C_1e^{r_1x}+C_2e^{r_2x}\)</span>.</p>
-<p>若<span class="math inline">\(r_1= r_2\)</span>为实根，则通解为<span class="math inline">\(y=(C_1+C_2x)e^{r_1x}\)</span>.</p>
-<p>若<span class="math inline">\(r_{1,2}=\alpha\pm i\beta\)</span>为共轭复根，则通解为<span class="math inline">\(y=e^{\alpha x}(C_1\cos\beta x+C_2\sin \beta x)\)</span>.</p>
+<p>求出特征方程<span
+class="math inline">\(r^2+pr+q=0\)</span>的两个根<span
+class="math inline">\(r_1,r_2\)</span></p>
+<p>若<span class="math inline">\(r_1\ne
+r_2\)</span>为实根，则通解为<span
+class="math inline">\(y=C_1e^{r_1x}+C_2e^{r_2x}\)</span>.</p>
+<p>若<span class="math inline">\(r_1= r_2\)</span>为实根，则通解为<span
+class="math inline">\(y=(C_1+C_2x)e^{r_1x}\)</span>.</p>
+<p>若<span class="math inline">\(r_{1,2}=\alpha\pm
+i\beta\)</span>为共轭复根，则通解为<span
+class="math inline">\(y=e^{\alpha x}(C_1\cos\beta x+C_2\sin \beta
+x)\)</span>.</p>
 </blockquote></li>
 </ul></li>
 </ol>

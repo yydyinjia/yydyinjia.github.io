@@ -235,41 +235,73 @@
               <h1 id="定理">定理</h1>
 <h2 id="一般形式">一般形式</h2>
 <ul>
-<li><p>若<span class="math inline">\(f(x),g(x),h(x)\in[a,b]\)</span>，且<span class="math inline">\(f(x),g(x)\)</span>在<span class="math inline">\([a,b]\)</span>上单调性一致，h(x)<span class="math inline">\(\geqslant0\)</span>，则有 <span class="math display">\[
-\int_{a}^{b}h(x)f(x)dx\int_{a}^{b}h(x)g(x)dx\leqslant \int_{a}^{b}h(x)dx \int_{a}^{b}h(x)f(x)g(x)dx.
+<li><p>若<span
+class="math inline">\(f(x),g(x),h(x)\in[a,b]\)</span>，且<span
+class="math inline">\(f(x),g(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上单调性一致，h(x)<span
+class="math inline">\(\geqslant0\)</span>，则有 <span
+class="math display">\[
+\int_{a}^{b}h(x)f(x)dx\int_{a}^{b}h(x)g(x)dx\leqslant \int_{a}^{b}h(x)dx
+\int_{a}^{b}h(x)f(x)g(x)dx.
 \]</span></p>
 <ul>
 <li><p>若单调性不一致，不等号变号。</p></li>
 <li><p>证明：</p>
 <blockquote>
-<p>由已知可得，<span class="math inline">\(\forall x,y\in[a,b]\)</span>,有不等式 <span class="math display">\[
+<p>由已知可得，<span class="math inline">\(\forall
+x,y\in[a,b]\)</span>,有不等式 <span class="math display">\[
 h(x)h(y)[f(x)-f(y)][g(x)-g(y)]\geqslant0
 \]</span> 成立，展开即： <span class="math display">\[
-h(x)h(y)f(x)g(x)+h(x)h(y)f(y)g(y)\geqslant h(x)h(y)f(x)g(y)+h(x)h(y)f(y)g(x)
-\]</span> 对上式先对<span class="math inline">\(x\)</span>于<span class="math inline">\([a,b]\)</span>上取积分得， <span class="math display">\[
-h(y)\int_{a}^{b}h(x)f(x)g(x)dx+h(y)f(y)g(y)\int_{a}^{b}h(x)dx\geqslant h(y)g(y)\int_{a}^{b}f(x)h(x)dx+h(y)f(y)\int_{a}^{b}h(x)g(x)dx
-\]</span> 对上式再对<span class="math inline">\(y\)</span>于<span class="math inline">\([a,b]\)</span>上取积分得， <span class="math display">\[
+h(x)h(y)f(x)g(x)+h(x)h(y)f(y)g(y)\geqslant
+h(x)h(y)f(x)g(y)+h(x)h(y)f(y)g(x)
+\]</span> 对上式先对<span class="math inline">\(x\)</span>于<span
+class="math inline">\([a,b]\)</span>上取积分得， <span
+class="math display">\[
+h(y)\int_{a}^{b}h(x)f(x)g(x)dx+h(y)f(y)g(y)\int_{a}^{b}h(x)dx\geqslant
+h(y)g(y)\int_{a}^{b}f(x)h(x)dx+h(y)f(y)\int_{a}^{b}h(x)g(x)dx
+\]</span> 对上式再对<span class="math inline">\(y\)</span>于<span
+class="math inline">\([a,b]\)</span>上取积分得， <span
+class="math display">\[
 \int_{a}^{b}h(y)dy\int_{a}^{b}h(x)f(x)g(x)dx+\int_{a}^{b}h(y)f(y)g(y)dy\int_{a}^{b}h(x)dx\geqslant\int_{a}^{b}h(y)g(y)dy\int_{a}^{b}f(x)h(x)dx+\int_{a}^{b}h(y)f(y)dy\int_{a}^{b}h(x)g(x)dx
-\]</span> 将上式的<span class="math inline">\(y\)</span>改为<span class="math inline">\(x\)</span>，整理得， <span class="math display">\[
-\int_{a}^{b}h(x)f(x)dx\int_{a}^{b}h(x)g(x)dx\leqslant \int_{a}^{b}h(x)dx \int_{a}^{b}h(x)f(x)g(x)dx.
+\]</span> 将上式的<span class="math inline">\(y\)</span>改为<span
+class="math inline">\(x\)</span>，整理得， <span class="math display">\[
+\int_{a}^{b}h(x)f(x)dx\int_{a}^{b}h(x)g(x)dx\leqslant \int_{a}^{b}h(x)dx
+\int_{a}^{b}h(x)f(x)g(x)dx.
 \]</span></p>
 </blockquote></li>
 </ul></li>
 </ul>
 <h2 id="特殊形式">特殊形式</h2>
 <ul>
-<li>取<span class="math inline">\(p(x)=1\)</span>，若<span class="math inline">\(f(x),g(x)\in[a,b]\)</span>,且<span class="math inline">\(f(x),g(x)\)</span>在<span class="math inline">\([a,b]\)</span>上单调性一致，则有 <span class="math display">\[
-\int_{a}^{b}f(x)dx\int_{a}^{b}g(x)dx\leqslant (b-a)\int_{a}^{b}f(x)g(x)dx
+<li>取<span class="math inline">\(p(x)=1\)</span>，若<span
+class="math inline">\(f(x),g(x)\in[a,b]\)</span>,且<span
+class="math inline">\(f(x),g(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上单调性一致，则有 <span
+class="math display">\[
+\int_{a}^{b}f(x)dx\int_{a}^{b}g(x)dx\leqslant
+(b-a)\int_{a}^{b}f(x)g(x)dx
 \]</span></li>
 </ul>
 <h2 id="求和形式">求和形式</h2>
 <ul>
-<li><p>若<span class="math inline">\(\forall i,j\)</span>有<span class="math inline">\((a_i-a_j)(b_i-b_j)\geqslant0\)</span>,则<span class="math inline">\(a_i,b_i\)</span>称为是似序的。若恒有相反的不等式，则称之为反序的。若<span class="math inline">\(a_i,b_i\)</span>似序，则有不等式 <span class="math display">\[
+<li><p>若<span class="math inline">\(\forall i,j\)</span>有<span
+class="math inline">\((a_i-a_j)(b_i-b_j)\geqslant0\)</span>,则<span
+class="math inline">\(a_i,b_i\)</span>称为是似序的。若恒有相反的不等式，则称之为反序的。若<span
+class="math inline">\(a_i,b_i\)</span>似序，则有不等式 <span
+class="math display">\[
 (\sum_{i=1}^{n}a_i)(\sum_{i=1}^{n}b_i)\leqslant n\sum_{i=1}^{n}a_ib_i,
-\]</span> 成立，<span class="math inline">\(a_i,b_i\)</span>反序时此不等式反向。等号当且仅当<span class="math inline">\(a_1=a_2=\cdots=a_n\)</span>或<span class="math inline">\(b_1=b_2=\cdots=b_n\)</span>时成立。</p>
+\]</span> 成立，<span
+class="math inline">\(a_i,b_i\)</span>反序时此不等式反向。等号当且仅当<span
+class="math inline">\(a_1=a_2=\cdots=a_n\)</span>或<span
+class="math inline">\(b_1=b_2=\cdots=b_n\)</span>时成立。</p>
 <ul>
-<li><p>证明与上面类似，先关于一个下标<span class="math inline">\(i\)</span>求和，再关于<span class="math inline">\(j\)</span>求和，最后将<span class="math inline">\(j\)</span>改为<span class="math inline">\(i\)</span>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210731114327820.png" srcset="/img/loading.gif" lazyload /></p></li>
+<li><p>证明与上面类似，先关于一个下标<span
+class="math inline">\(i\)</span>求和，再关于<span
+class="math inline">\(j\)</span>求和，最后将<span
+class="math inline">\(j\)</span>改为<span
+class="math inline">\(i\)</span>。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210731114327820.png" srcset="/img/loading.gif" lazyload /></p></li>
 </ul></li>
 </ul>
 <h1 id="练习">练习</h1>
@@ -278,19 +310,26 @@ h(y)\int_{a}^{b}h(x)f(x)g(x)dx+h(y)f(y)g(y)\int_{a}^{b}h(x)dx\geqslant h(y)g(y)\
 \int_0^{\frac{\pi}{2}}\frac{\sin{x}}{1+x^2}dx\leqslant\int_0^{\frac{\pi}{2}}\frac{\cos{x}}{1+x^2}dx.
 \]</span></p>
 <ul>
-<li><img src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210731113753114.png" srcset="/img/loading.gif" lazyload /></li>
+<li><img
+src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210731113753114.png" srcset="/img/loading.gif" lazyload /></li>
 </ul></li>
-<li><p>设f(x)在<span class="math inline">\([a,b]\)</span>上连续且单调递增，试证： <span class="math display">\[
+<li><p>设f(x)在<span
+class="math inline">\([a,b]\)</span>上连续且单调递增，试证： <span
+class="math display">\[
 \int_a^bxf(x)dx\geqslant\frac{a+b}{2}\int_a^bf(x)dx.
 \]</span></p>
 <ul>
-<li><img src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210731113458738.png" srcset="/img/loading.gif" lazyload /></li>
+<li><img
+src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210731113458738.png" srcset="/img/loading.gif" lazyload /></li>
 </ul></li>
-<li><p>设f(x)在区间<span class="math inline">\([0,1]\)</span>上连续且单调递增，试证： <span class="math display">\[
+<li><p>设f(x)在区间<span
+class="math inline">\([0,1]\)</span>上连续且单调递增，试证： <span
+class="math display">\[
 \frac{\int_0^1xf^2(x)dx}{\int_0^1xf(x)dx}\geqslant\frac{\int_0^1f^2(x)dx}{\int_0^1f(x)dx}.
 \]</span></p>
 <ul>
-<li><img src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210731113705637.png" srcset="/img/loading.gif" lazyload /></li>
+<li><img
+src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210731113705637.png" srcset="/img/loading.gif" lazyload /></li>
 </ul></li>
 <li><p>证明不等式： <span class="math display">\[
 \int_0^1\frac{\sin{x}}{\sqrt{1-x^2}}dx&lt;\int_0^1\frac{\cos{x}}{\sqrt{1-x^2}}dx.

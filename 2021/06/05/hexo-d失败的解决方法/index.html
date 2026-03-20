@@ -233,10 +233,12 @@
             
             <div class="markdown-body">
               <h2 id="hexo-d出现如下错误">hexo d出现如下错误</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210606205423425.png" srcset="/img/loading.gif" lazyload /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210606205423425.png" srcset="/img/loading.gif" lazyload /></p>
 <h2 id="解决方法">解决方法</h2>
 <p>删除博客目录下的.deploy_git文件夹</p>
-<p><img src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210606205439634.png" srcset="/img/loading.gif" lazyload /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20210606205439634.png" srcset="/img/loading.gif" lazyload /></p>
 <p>接着依次执行如下命令</p>
 <figure class="highlight haxe"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs haxe">git config --global core.autocrlf <span class="hljs-literal">false</span><br>hexo clean<br>hexo g<br>hexo d<br></code></pre></div></td></tr></table></figure>
 

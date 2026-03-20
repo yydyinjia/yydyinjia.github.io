@@ -236,16 +236,28 @@
 <p>在阅读《高等代数考研——高频真题分类精解300例》，记录多项式的相关练习。</p>
 <h2 id="带余除法">带余除法</h2>
 <ol type="1">
-<li>设多项式<span class="math inline">\(f(x)\)</span>除以<span class="math inline">\(x^2-1,x^2+3\)</span>的余式分别为<span class="math inline">\(2x+7,2x-1\)</span>求多项式<span class="math inline">\(f(x)\)</span>除以<span class="math inline">\((x^2-1)(x^2+3)\)</span>的余式.
+<li>设多项式<span class="math inline">\(f(x)\)</span>除以<span
+class="math inline">\(x^2-1,x^2+3\)</span>的余式分别为<span
+class="math inline">\(2x+7,2x-1\)</span>求多项式<span
+class="math inline">\(f(x)\)</span>除以<span
+class="math inline">\((x^2-1)(x^2+3)\)</span>的余式.
 <ul>
-<li><span class="math inline">\(\frac{1}{2}x^3+2x^2+\frac{7}{2}x+5\)</span>.</li>
+<li><span
+class="math inline">\(\frac{1}{2}x^3+2x^2+\frac{7}{2}x+5\)</span>.</li>
 </ul></li>
-<li>求次数最低的首项系数为<span class="math inline">\(1\)</span>的实多项式<span class="math inline">\(f(x)\)</span>使得<span class="math inline">\(f(0)=7,f(1)=14,f(2)=35,f(3)=76\)</span>.
+<li>求次数最低的首项系数为<span
+class="math inline">\(1\)</span>的实多项式<span
+class="math inline">\(f(x)\)</span>使得<span
+class="math inline">\(f(0)=7,f(1)=14,f(2)=35,f(3)=76\)</span>.
 <ul>
 <li><span class="math inline">\(f(x)=x^3+4x^2+2x+7\)</span>.</li>
 <li>拉格朗日插值</li>
 </ul></li>
-<li>求次数最低的首项系数为<span class="math inline">\(1\)</span>的实多项式<span class="math inline">\(f(x)\)</span>使得<span class="math inline">\(x^2+1|f(x)\)</span>,且<span class="math inline">\(x^3+x^2+1|f(x)+1\)</span>.
+<li>求次数最低的首项系数为<span
+class="math inline">\(1\)</span>的实多项式<span
+class="math inline">\(f(x)\)</span>使得<span
+class="math inline">\(x^2+1|f(x)\)</span>,且<span
+class="math inline">\(x^3+x^2+1|f(x)+1\)</span>.
 <ul>
 <li><span class="math inline">\(f(x)=x^3+x\)</span>.</li>
 <li>中国剩余定理</li>
@@ -253,42 +265,84 @@
 </ol>
 <h2 id="整除">整除</h2>
 <ol type="1">
-<li><p>设<span class="math inline">\(f(x),g(x),h(x)\)</span>是实系数多项式,且 <span class="math display">\[
+<li><p>设<span
+class="math inline">\(f(x),g(x),h(x)\)</span>是实系数多项式,且 <span
+class="math display">\[
 (x^2+1)h(x)+(x-1)f(x)+(x-2)g(x)=0,\\
 (x^2+1)h(x)+(x+1)f(x)+(x+2)g(x)=0
-\]</span> 证明:<span class="math inline">\(f(x),g(x)\)</span>能被<span class="math inline">\(x^2+1\)</span>整除(<span class="math inline">\(x^2+1\)</span>为<span class="math inline">\(f(x),g(x)\)</span>的公因式).</p>
+\]</span> 证明:<span class="math inline">\(f(x),g(x)\)</span>能被<span
+class="math inline">\(x^2+1\)</span>整除(<span
+class="math inline">\(x^2+1\)</span>为<span
+class="math inline">\(f(x),g(x)\)</span>的公因式).</p>
 <ul>
 <li>解出<span class="math inline">\(f(x),g(x)\)</span>.</li>
-<li><span class="math inline">\(x\)</span>用<span class="math inline">\(i,-i\)</span>代入,证明<span class="math inline">\(f(i)=f(-i)=0\)</span>.</li>
+<li><span class="math inline">\(x\)</span>用<span
+class="math inline">\(i,-i\)</span>代入,证明<span
+class="math inline">\(f(i)=f(-i)=0\)</span>.</li>
 </ul></li>
-<li><p>设<span class="math inline">\((x^2+x+1)|(f(x^3)+xg(x^3))\)</span>,且<span class="math inline">\(n\)</span>阶方阵<span class="math inline">\(A\)</span>有一个特征值为<span class="math inline">\(1\)</span>,证明:<span class="math inline">\(f(A),g(A)\)</span>都不是可逆阵.</p>
+<li><p>设<span
+class="math inline">\((x^2+x+1)|(f(x^3)+xg(x^3))\)</span>,且<span
+class="math inline">\(n\)</span>阶方阵<span
+class="math inline">\(A\)</span>有一个特征值为<span
+class="math inline">\(1\)</span>,证明:<span
+class="math inline">\(f(A),g(A)\)</span>都不是可逆阵.</p>
 <ul>
-<li>先证明<span class="math inline">\(1\)</span>是<span class="math inline">\(f(x),g(x)\)</span>的根,用到<span class="math inline">\(3\)</span>次单位根,然后根据<span class="math inline">\(f(1)\)</span>为<span class="math inline">\(f(A)\)</span>的特征值得到<span class="math inline">\(f(A)\)</span>为不可逆.</li>
+<li>先证明<span class="math inline">\(1\)</span>是<span
+class="math inline">\(f(x),g(x)\)</span>的根,用到<span
+class="math inline">\(3\)</span>次单位根,然后根据<span
+class="math inline">\(f(1)\)</span>为<span
+class="math inline">\(f(A)\)</span>的特征值得到<span
+class="math inline">\(f(A)\)</span>为不可逆.</li>
 </ul></li>
 <li><p>设多项式 <span class="math display">\[
 f(x)=x^{3m}-x^{3n+1}+x^{3p+2},g(x)=x^2-x+1,
-\]</span> 其中为<span class="math inline">\(m,n,p\)</span>非负整数.证明:<span class="math inline">\(g(x)|f(x)\)</span>的充要条件是<span class="math inline">\(m,n,p\)</span>有相同的奇偶性.</p>
+\]</span> 其中为<span
+class="math inline">\(m,n,p\)</span>非负整数.证明:<span
+class="math inline">\(g(x)|f(x)\)</span>的充要条件是<span
+class="math inline">\(m,n,p\)</span>有相同的奇偶性.</p>
 <ul>
-<li>设<span class="math inline">\(g(x)\)</span>的两个根为<span class="math inline">\(\varepsilon_1,\varepsilon_2\)</span>,<span class="math inline">\(g(x)|f(x)\)</span>等价于<span class="math inline">\(f(\varepsilon_1)=0,f(\varepsilon_2)=0\)</span>.</li>
+<li>设<span class="math inline">\(g(x)\)</span>的两个根为<span
+class="math inline">\(\varepsilon_1,\varepsilon_2\)</span>,<span
+class="math inline">\(g(x)|f(x)\)</span>等价于<span
+class="math inline">\(f(\varepsilon_1)=0,f(\varepsilon_2)=0\)</span>.</li>
 </ul></li>
-<li><p>设<span class="math inline">\(m,n,p\)</span>为非负整数,<span class="math inline">\(f(x)=x^{3m}+x^{3n+1}+x^{3p+2}+1\)</span>,证明:<span class="math inline">\((x^2+x+1,f(x))=1\)</span>.</p>
+<li><p>设<span class="math inline">\(m,n,p\)</span>为非负整数,<span
+class="math inline">\(f(x)=x^{3m}+x^{3n+1}+x^{3p+2}+1\)</span>,证明:<span
+class="math inline">\((x^2+x+1,f(x))=1\)</span>.</p>
 <ul>
-<li>理解本质:<span class="math inline">\(x^2+x+1\not\mid f(x)\)</span>.</li>
+<li>理解本质:<span class="math inline">\(x^2+x+1\not\mid
+f(x)\)</span>.</li>
 </ul></li>
-<li><p>设<span class="math inline">\(a_i(1\leqslant i\leqslant n)\)</span>,是<span class="math inline">\(n\)</span>个非负整数,试求多项式<span class="math inline">\(\sum\limits_{i=1}^{n}x^{a_i}\)</span>被<span class="math inline">\(x^2+x+1\)</span>整除的充要条件.</p></li>
-<li><p>(西北大学)设<span class="math inline">\(f_1(x),\cdots,f_n(x)(n\geqslant2)\)</span>为多项式，且满足 <span class="math display">\[
+<li><p>设<span class="math inline">\(a_i(1\leqslant i\leqslant
+n)\)</span>,是<span
+class="math inline">\(n\)</span>个非负整数,试求多项式<span
+class="math inline">\(\sum\limits_{i=1}^{n}x^{a_i}\)</span>被<span
+class="math inline">\(x^2+x+1\)</span>整除的充要条件.</p></li>
+<li><p>(西北大学)设<span
+class="math inline">\(f_1(x),\cdots,f_n(x)(n\geqslant2)\)</span>为多项式，且满足
+<span class="math display">\[
 x^{n-1}+\cdots+x+1|f_1(x^n)+xf_2(x^n)+\cdots+x^{n-1}f_n(x^n).
-\]</span> 证明:存在某一常数<span class="math inline">\(c\)</span>使得<span class="math inline">\((x-1)^n|\prod\limits_{i=1}^n(f_i(x)-c)\)</span>.</p>
+\]</span> 证明:存在某一常数<span
+class="math inline">\(c\)</span>使得<span
+class="math inline">\((x-1)^n|\prod\limits_{i=1}^n(f_i(x)-c)\)</span>.</p>
 <ul>
-<li><p>证明<span class="math inline">\((f_1(1),f_2(1),\cdots,f_n(1))\)</span>与<span class="math inline">\((1,1,\cdots,1)\)</span>平行，群里的大佬做的。</p>
+<li><p>证明<span
+class="math inline">\((f_1(1),f_2(1),\cdots,f_n(1))\)</span>与<span
+class="math inline">\((1,1,\cdots,1)\)</span>平行，群里的大佬做的。</p>
 <blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20211009203841444.png" srcset="/img/loading.gif" lazyload /></p>
-<p><img src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20211009203909354.png" srcset="/img/loading.gif" lazyload /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20211009203841444.png" srcset="/img/loading.gif" lazyload /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/handong991201/picture/img/image-20211009203909354.png" srcset="/img/loading.gif" lazyload /></p>
 </blockquote></li>
 </ul></li>
-<li><p>若<span class="math inline">\((x-1)|g(x^n)\)</span>，求证:<span class="math inline">\((x^n-1)|g(x^n)\)</span>.</p></li>
-<li><p>若<span class="math inline">\((x-a)|g(x^n)\)</span>，求证:<span class="math inline">\((x^n-a^n)|g(x^n)\)</span>.</p></li>
-<li><p>设<span class="math inline">\(m\)</span>为任意正整数，证明:<span class="math inline">\(f^m(x)|g^m(x)\)</span>的充要条件为<span class="math inline">\(f(x)|g(x)\)</span>.</p></li>
+<li><p>若<span class="math inline">\((x-1)|g(x^n)\)</span>，求证:<span
+class="math inline">\((x^n-1)|g(x^n)\)</span>.</p></li>
+<li><p>若<span class="math inline">\((x-a)|g(x^n)\)</span>，求证:<span
+class="math inline">\((x^n-a^n)|g(x^n)\)</span>.</p></li>
+<li><p>设<span class="math inline">\(m\)</span>为任意正整数，证明:<span
+class="math inline">\(f^m(x)|g^m(x)\)</span>的充要条件为<span
+class="math inline">\(f(x)|g(x)\)</span>.</p></li>
 <li></li>
 </ol>
 
