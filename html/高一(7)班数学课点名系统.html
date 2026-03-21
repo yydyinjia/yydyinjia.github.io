@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本地示例页面</title>
+    <!-- 内部CSS，不引用外部文件 -->
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        /* 页面主体样式 */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        /* 主要内容区域 */
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        main {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* 侧边栏样式 */
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* 卡片样式 */
+        .card {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* 按钮样式 */
+        button {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        /* 页脚样式 */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <h1>本地示例页面</h1>
+        <p>不依赖外部资源的HTML示例</p>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#service">服务</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要内容容器 -->
+    <div class="container">
+        <!-- 主内容区 -->
+        <main>
+            <h2>欢迎来到本地示例页面</h2>
+            <p>这个页面所有的样式和脚本都在本地，不引用任何外部JS/CSS文件。</p>
+            
+            <div class="card">
+                <h3>功能演示</h3>
+                <p>点击下方按钮可以触发本地JS交互效果：</p>
+                <button id="toggleBtn">点击切换文本</button>
+                <p id="demoText" style="margin-top: 15px;">初始文本内容</p>
+            </div>
+
+            <div class="card">
+                <h3>列表示例</h3>
+                <ul>
+                    <li>本地CSS样式</li>
+                    <li>本地JS交互</li>
+                    <li>响应式布局</li>
+                    <li>无外部依赖</li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- 侧边栏 -->
+        <aside>
+            <h3>侧边栏</h3>
+            <div class="card">
+                <p>这是侧边栏内容</p>
+                <p>当前时间：<span id="currentTime"></span></p>
+            </div>
+            <div class="card">
+                <p>页面特性：</p>
+                <ol>
+                    <li>纯本地资源</li>
+                    <li>响应式设计</li>
+                    <li>简单交互</li>
+                </ol>
+            </div>
+        </aside>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2026 本地示例页面 - 无外部资源依赖</p>
+    </footer>
+
+    <!-- 内部JS，不引用外部文件 -->
+    <script>
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            // 显示当前时间
+            function updateTime() {
+                const now = new Date();
+                const timeStr = now.toLocaleString('zh-CN');
+                document.getElementById('currentTime').textContent = timeStr;
+            }
+            updateTime();
+            setInterval(updateTime, 1000); // 每秒更新时间
+
+            // 按钮点击交互
+            const toggleBtn = document.getElementById('toggleBtn');
+            const demoText = document.getElementById('demoText');
+            let isToggled = false;
+
+            toggleBtn.addEventListener('click', function() {
+                if (isToggled) {
+                    demoText.textContent = "初始文本内容";
+                    demoText.style.color = "#333";
+                } else {
+                    demoText.textContent = "点击按钮后的文本内容！";
+                    demoText.style.color = "#e74c3c";
+                }
+                isToggled = !isToggled;
+            });
+
+            // 导航链接点击提示
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // 阻止默认跳转
+                    alert(`你点击了【${this.textContent}】链接（本地演示，无实际跳转）`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
