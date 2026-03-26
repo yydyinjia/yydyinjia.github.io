@@ -1,17 +1,9 @@
----
-title: 点名系统
-date: 2026-03-20 14:29:28
-layout: false
-comments: false
-sidebar: false
----
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>高一(7)班数学课点名系统</title>
+    <title>高一(6)班数学课点名系统</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -20,7 +12,7 @@ sidebar: false
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         body {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             min-height: 100vh;
@@ -417,8 +409,8 @@ sidebar: false
 <body>
     <div class="container">
         <header>
-            <h1><i class="fas fa-chalkboard-teacher"></i> 高一(7)班数学课点名系统</h1>
-            <p>教师：ye | 班级：高一(7)班 | 日期：<span id="current-date"></span></p>
+            <h1><i class="fas fa-chalkboard-teacher"></i> 高一(6)班数学课点名系统</h1>
+            <p>教师：ye | 班级：高一(6)班 | 日期：<span id="current-date"></span></p>
             <div class="header-controls">
                 <button class="btn btn-primary" id="call-random">
                     <i class="fas fa-random"></i> 随机点名
@@ -478,7 +470,7 @@ sidebar: false
             </div>
         </div>
     </div>
-    
+
     <!-- 点名提示框 -->
     <div class="modal" id="modal">
         <div class="modal-content">
@@ -494,7 +486,7 @@ sidebar: false
             </div>
         </div>
     </div>
-    
+
     <script>
         // 当前日期显示
         const dateElement = document.getElementById('current-date');
@@ -504,51 +496,50 @@ sidebar: false
         
         // 学生数据
         const students = [
-            { id: "1", name: "陈洁妃", called: false },
-            { id: "5", name: "董梦琦", called: false },
-            { id: "8", name: "葛欣妍", called: false },
-            { id: "9", name: "过炜琪", called: false },
-            { id: "12", name: "兰妙怡", called: false },
-            { id: "13", name: "蓝潇楹", called: false },
-            { id: "14", name: "蓝雨轩", called: false },
-            { id: "15", name: "雷丝淇", called: false },
-            { id: "17", name: "李菲", called: false },
-            { id: "20", name: "李欣宇", called: false },
-            { id: "26", name: "陶清源", called: false },
-            { id: "27", name: "王静怡", called: false },
-            { id: "29", name: "危珈仪", called: false },
-            { id: "31", name: "吴亦岚", called: false },
-            { id: "32", name: "肖琳雅", called: false },
-            { id: "35", name: "徐紫淇", called: false },
-            { id: "36", name: "许文丽", called: false },
-            { id: "37", name: "杨紫灵", called: false },
-            { id: "38", name: "叶晨媛", called: false },
-            { id: "41", name: "赵婉婷", called: false },
-            { id: "42", name: "赵雯萱", called: false },
-            { id: "43", name: "周欢", called: false },
-            { id: "2", name: "陈锦阳", called: false },
-            { id: "3", name: "陈龙", called: false },
-            { id: "4", name: "陈文赫", called: false },
-            { id: "6", name: "段程宇", called: false },
-            { id: "7", name: "方刘俊南", called: false },
-            { id: "10", name: "黄浩岚", called: false },
-            { id: "11", name: "黄祎航", called: false },
-            { id: "16", name: "雷益棚", called: false },
-            { id: "18", name: "李靖桓", called: false },
-            { id: "19", name: "李明泽", called: false },
-            { id: "21", name: "刘俊涛", called: false },
-            { id: "22", name: "楼涵滔", called: false },
-            { id: "23", name: "楼知育", called: false },
-            { id: "24", name: "钱晨", called: false },
-            { id: "25", name: "汤淇杰", called: false },
-            { id: "28", name: "王宇涵", called: false },
-            { id: "30", name: "温佳瑞", called: false },
-            { id: "33", name: "谢家豪", called: false },
-            { id: "34", name: "徐宇航", called: false },
-            { id: "39", name: "章子默", called: false },
-            { id: "40", name: "赵鼎", called: false },
-            { id: "44", name: "朱洋毅", called: false },
-            { id: "45", name: "邹丽皓", called: false }
+            { id: "1", name: "陈柏辰", called: false },
+{ id: "2", name: "陈锦阳", called: false },
+{ id: "3", name: "陈文赫", called: false },
+{ id: "4", name: "陈跃文", called: false },
+{ id: "5", name: "褚艺琳", called: false },
+{ id: "6", name: "傅芷萱", called: false },
+{ id: "7", name: "龚彬斌", called: false },
+{ id: "8", name: "郭夕瑶", called: false },
+{ id: "9", name: "胡晨昊", called: false },
+{ id: "10", name: "黄浩岚", called: false },
+{ id: "11", name: "黄思城", called: false },
+{ id: "12", name: "江毓辉", called: false },
+{ id: "13", name: "金芷涵", called: false },
+{ id: "14", name: "蓝湘婷", called: false },
+{ id: "15", name: "雷鑫鑫", called: false },
+{ id: "16", name: "林皓宇", called: false },
+{ id: "17", name: "林鑫艺", called: false },
+{ id: "18", name: "楼涵滔", called: false },
+{ id: "19", name: "毛津楠", called: false },
+{ id: "20", name: "潘康程", called: false },
+{ id: "21", name: "钱晨", called: false },
+{ id: "22", name: "邱程威", called: false },
+{ id: "23", name: "宋雅媛", called: false },
+{ id: "24", name: "汤淇杰", called: false },
+{ id: "25", name: "汤伊琳", called: false },
+{ id: "26", name: "汤政", called: false },
+{ id: "27", name: "王安康", called: false },
+{ id: "28", name: "王朝阳", called: false },
+{ id: "29", name: "王怡", called: false },
+{ id: "30", name: "卫雯婷", called: false },
+{ id: "31", name: "吴家慧", called: false },
+{ id: "32", name: "吴宇恒", called: false },
+{ id: "33", name: "肖琳雅", called: false },
+{ id: "34", name: "谢家豪", called: false },
+{ id: "35", name: "许文丽", called: false },
+{ id: "36", name: "杨奕喆", called: false },
+{ id: "37", name: "叶皓轩", called: false },
+{ id: "38", name: "袁梦晗", called: false },
+{ id: "39", name: "詹望云", called: false },
+{ id: "40", name: "张诗楠", called: false },
+{ id: "41", name: "郑倍烨", called: false },
+{ id: "42", name: "郑梦琪", called: false },
+{ id: "43", name: "钟坤臻", called: false },
+{ id: "44", name: "周若然", called: false }
         ];
         
         const studentContainer = document.getElementById('student-container');
