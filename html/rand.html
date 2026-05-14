@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>随机数种子原理_带数学公式演示</title>
+    <style>
+        body {font-family: "微软雅黑", sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px;}
+        .card {border: 1px solid #ddd; border-radius: 10px; padding: 25px; margin: 15px 0; background: #fafafa;}
+        h2 {color: #2c3e50; text-align: center;}
+        .formula {background: #eef5ff; padding: 15px; border-radius: 8px; font-size: 18px; text-align: center; margin:10px 0; font-weight:bold; color:#003366;}
+        .item {margin: 12px 0;}
+        label {display: inline-block; width: 100px; font-weight: bold;}
+        input {padding: 6px; width: 140px; font-size: 15px;}
+        button {padding: 8px 16px; margin: 0 6px 8px 0; cursor: pointer; border: none; border-radius: 4px; background: #409eff; color: #fff; font-size: 15px;}
+        button:hover {background: #66b1ff;}
+        .res-box {margin-top: 20px; line-height: 1.8; color: #194b8e; font-size: 16px; word-break: break-all;}
+    </style>
+</head>
+<body>
+    <h2>随机数种子原理 数学公式可视化演示</h2>
+
+    <div class="card">
+        <h3>一、伪随机数核心数学公式（LCG线性同余法）</h3>
+        <div class="formula">
+            X<sub>n+1</sub> = ( a × X<sub>n</sub> + c ) mod m
+        </div>
+        <p>参数说明：</p>
+        <p>● X<sub>n</sub> ：当前种子值</p>
+        <p>● a ：乘数 = 1103515245</p>
+        <p>● c ：增量 = 12345</p>
+        <p>● m ：模值 = 2<sup>31</sup></p>
+        <p>● mod ：取余运算</p>
+        <br>
+        <h3>二、原理总结</h3>
+        <p>1. 用上面固定数学公式，从初始种子不断迭代算出一串数字；</p>
+        <p>2. 种子相同 → 公式计算结果完全相同 → 随机数一模一样；</p>
+        <p>3. 一键系统时间当种子，每次初始值不同，随机数就不同。</p>
+    </div>
+
+    <div class="card">
+        <div class="item">
+            <label>随机数种子：</label>
+            <input type="number" id="seed" value="666">
+            <button onclick="setTimeSeed()">一键系统时间为种子</button>
+        </div>
+        <div class="item">
+            <label>最小值：</label>
+            <input type="number" id="minNum" value="1">
+        </div>
+        <div class="item">
+            <label>最大值：</label>
+            <input type="number" id="maxNum" value="100">
+        </div>
+        <div class="item">
+            <label>生成个数：</label>
+            <input type="number" id="count" value="20">
+        </div>
+        <div class="item" style="margin-top:18px;">
+            <button onclick="genRand()">批量生成</button>
+            <button onclick="clearRes()">清空记录</button>
+        </div>
+
+        <div class="res-box" id="res"></div>
+    </div>
+
+<script>
+    // LCG 线性同余 严格按页面公式实现
+    function lcg(seed) {
+        const a = 1103515245;
+        const c = 12345;
+        const m = 2 ** 31;
+        return (a * seed + c) % m;
+    }
+
+    // 生成 [min,max] 单个随机整数
+    function getRandOne(seed, min, max) {
+        let newSeed = lcg(seed);
+        let range = max - min + 1;
+        let num = min + (newSeed % range);
+        return { num, newSeed };
+    }
+
+    // 一键设置系统时间为种子
+    function setTimeSeed() {
+        let timeSeed = Date.now();
+        document.getElementById('seed').value = timeSeed;
+    }
+
+    // 批量生成随机数
+    function genRand() {
+        let seed = parseInt(document.getElementById('seed').value);
+        let min = parseInt(document.getElementById('minNum').value);
+        let max = parseInt(document.getElementById('maxNum').value);
+        let cnt = parseInt(document.getElementById('count').value);
+        let res = document.getElementById('res');
+
+        if (min >= max) {
+            res.innerHTML += "❌ 最小值必须小于最大值<br><br>";
+            return;
+        }
+        if (cnt < 1 || cnt > 1000) {
+            res.innerHTML += "❌ 生成个数请输入 1~1000 之间<br><br>";
+            return;
+        }
+
+        let tempSeed = seed;
+        let arr = [];
+        for (let i = 0; i < cnt; i++) {
+            let ret = getRandOne(tempSeed, min, max);
+            arr.push(ret.num);
+            tempSeed = ret.newSeed;
+        }
+
+        let html = `✅ 种子：${seed} | 范围[${min},${max}] | 数量：${cnt}<br>📌 随机数：${arr.join('  ')}<br><br>`;
+        res.innerHTML += html;
+    }
+
+    // 清空结果
+    function clearRes() {
+        document.getElementById('res').innerHTML = "";
+    }
+</script>
+</body>
+</html>
